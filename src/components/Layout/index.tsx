@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header"
-import ThemeProvider, { ThemedGlobalStyle } from "../../theme"
+import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from "../../theme"
 import Footer from "../footer"
 import MDXStyleProvider from "./MdxProvider"
 
@@ -27,9 +27,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <FixedGlobalStyle />
       <ThemeProvider>
+        <ThemedGlobalStyle />
         <MDXStyleProvider>
-          <ThemedGlobalStyle />
           {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
           <Header />
           <main>{children}</main>
