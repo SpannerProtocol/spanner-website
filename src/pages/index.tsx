@@ -67,9 +67,11 @@ const BannerContainer = styled.div`
   height: 650px;
   background: transparent url(${heroBanner}) center center no-repeat padding-box;
   opacity: 1;
+  z-index: 5;
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     background: transparent url(${heroMobileBanner}) 0% 0% no-repeat fixed;
     background-size: cover;
+    z-index: 5;
   `};
 `
 
@@ -126,36 +128,34 @@ const HeroButton2 = styled(ButtonTrans)`
 `
 
 function HeroBanner() {
-  const theme = useContext(ThemeContext)
+  // const theme = useContext(ThemeContext)
   return (
     <>
-      <SectionDarkBg backgroundColor={theme.bg2}>
-        <CenterWrapper>
-          <BannerContainer className="Hero Banner">
-            <ContentWrapper>
-              <BannerTextContainer>
-                <HeaderWrapper>
-                  <Header1>The Blockchain for Borderless Collaboration</Header1>
-                </HeaderWrapper>
-                <ThinText fontSize="24px" mobileFontSize="20px">
-                  Making collaboration simple for everyone
-                </ThinText>
-                <HeroButtonWrapper>
-                  <ExternalLink
-                    href="https://dapp.spanner.network"
-                    target="_blank"
-                  >
-                    <HeroButton1>Launch Dapp</HeroButton1>
-                  </ExternalLink>
-                  <SLink to="/docs/getting-started">
-                    <HeroButton2>Learn More</HeroButton2>
-                  </SLink>
-                </HeroButtonWrapper>
-              </BannerTextContainer>
-            </ContentWrapper>
-          </BannerContainer>
-        </CenterWrapper>
-      </SectionDarkBg>
+      <CenterWrapper>
+        <BannerContainer className="Hero Banner">
+          <ContentWrapper>
+            <BannerTextContainer>
+              <HeaderWrapper>
+                <Header1>The Blockchain for Borderless Collaboration</Header1>
+              </HeaderWrapper>
+              <ThinText fontSize="24px" mobileFontSize="20px">
+                Making collaboration simple for everyone
+              </ThinText>
+              <HeroButtonWrapper>
+                <ExternalLink
+                  href="https://dapp.spanner.network"
+                  target="_blank"
+                >
+                  <HeroButton1>Launch Dapp</HeroButton1>
+                </ExternalLink>
+                <SLink to="/docs/getting-started">
+                  <HeroButton2>Learn More</HeroButton2>
+                </SLink>
+              </HeroButtonWrapper>
+            </BannerTextContainer>
+          </ContentWrapper>
+        </BannerContainer>
+      </CenterWrapper>
     </>
   )
 }
