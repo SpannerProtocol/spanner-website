@@ -145,7 +145,7 @@ function HeroBanner() {
                     href="https://dapp.spanner.network"
                     target="_blank"
                   >
-                    <HeroButton1>Launch App</HeroButton1>
+                    <HeroButton1>Launch Dapp</HeroButton1>
                   </ExternalLink>
                   <SLink to="/docs/getting-started">
                     <HeroButton2>Learn More</HeroButton2>
