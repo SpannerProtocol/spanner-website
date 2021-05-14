@@ -1,0 +1,14 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/banner-bullettrain-desktop.jpg": "static/banner-bullettrain-desktop-95fa597344eec41402b60a34d58d66ff.jpg",
+  "static/banner-joincommunity.png": "static/banner-joincommunity-e6b2e267191bd5feb0463448ac640421.png",
+  "static/dpo-comparison-chart.svg": "static/dpo-comparison-chart-dd2fe3e2415b27347f7f6746749e7abb.svg",
+  "static/hero-banner-desktop.jpg": "static/hero-banner-desktop-bcafc5acfbf6f3e9d45199fd03277ea6.jpg",
+  "static/hero-banner-mobile.jpg": "static/hero-banner-mobile-88c7a22b3d1f6921b494e2866c37b1e8.jpg",
+  "static/icon-hamburger-gradient.svg": "static/icon-hamburger-gradient-5242810e303d2653820c199aa405412e.svg",
+  "static/logo-rococo.png": "static/logo-rococo-e550bfeda03292ce334c16fa4f96cb3b.png",
+  "static/social-icon-facebook.svg": "static/social-icon-facebook-49c7b75e2b5bde53d9aead46d9b2ea9b.svg",
+  "static/spanner-deck-v1.22.pdf": "static/spanner-deck-v1.22-1ec1cb62f1c8b6c0af331f6e2ace520c.pdf",
+  "static/spanner-tech-stack.svg": "static/spanner-tech-stack-a73933832f11c80ec3c6201a70f53682.svg"
+}
