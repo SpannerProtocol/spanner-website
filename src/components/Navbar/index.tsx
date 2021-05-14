@@ -63,9 +63,6 @@ const MobileWrapper = styled.div`
   ${({ theme }) => theme.mediaWidth.upToSmall`
     display: initial;
   `};
-  @media (max-width: 720px) {
-    display: initial;
-  }
 `
 
 const DesktopWrapper = styled.div`
@@ -73,9 +70,6 @@ const DesktopWrapper = styled.div`
   ${({ theme }) => theme.mediaWidth.upToSmall`
     display: none;
   `};
-  @media (max-width: 720px) {
-    display: none; 
-  }
 `
 
 const useStyles = makeStyles({
@@ -159,7 +153,8 @@ export function MobileNav() {
   }
 
   return (
-    <MobileWrapper>
+    // <MobileWrapper>
+    <>
       <HamburgerWrapper onClick={toggleDrawer(true)}>
         <img src={hamburgerIcon} width="30px" />
       </HamburgerWrapper>
@@ -188,7 +183,8 @@ export function MobileNav() {
           </ExternalLink>
         </CenterWrapper>
       </Drawer>
-    </MobileWrapper>
+      {/* </MobileWrapper> */}
+    </>
   )
 }
 
@@ -196,42 +192,40 @@ export function DesktopNav() {
   const [activeLabel, setActiveLabel] = useState<string>("")
   const theme = useContext(ThemeContext)
   return (
-    <DesktopWrapper>
-      <div style={{ display: "flex" }}>
-        {navItems.map((navItem, index) => (
-          <div key={index}>
-            {navItem.internal ? (
-              <SLink
-                to={navItem.link}
-                padding="0 1.5rem"
-                fontSize="16px"
-                onClick={() => setActiveLabel(navItem.label)}
-                color={
-                  navItem.label === activeLabel ? theme.blue1 : theme.text1
-                }
-              >
-                {navItem.label}
-              </SLink>
-            ) : (
-              <ExternalLink
-                href={navItem.link}
-                target="_blank"
-                padding="0 1.5rem"
-                fontSize="16px"
-                download
-              >
-                {navItem.label}
-              </ExternalLink>
-            )}
-          </div>
-        ))}
-        <ExternalLink href="https://dapp.spanner.network" target="_blank">
-          <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.15rem">
-            Launch Dapp
-          </HeavyText>
-        </ExternalLink>
-      </div>
-    </DesktopWrapper>
+    // <DesktopWrapper>
+    <div style={{ display: "flex" }}>
+      {navItems.map((navItem, index) => (
+        <div key={index}>
+          {navItem.internal ? (
+            <SLink
+              to={navItem.link}
+              padding="0 1.5rem"
+              fontSize="16px"
+              onClick={() => setActiveLabel(navItem.label)}
+              color={navItem.label === activeLabel ? theme.blue1 : theme.text1}
+            >
+              {navItem.label}
+            </SLink>
+          ) : (
+            <ExternalLink
+              href={navItem.link}
+              target="_blank"
+              padding="0 1.5rem"
+              fontSize="16px"
+              download
+            >
+              {navItem.label}
+            </ExternalLink>
+          )}
+        </div>
+      ))}
+      <ExternalLink href="https://dapp.spanner.network" target="_blank">
+        <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.15rem">
+          Launch Dapp
+        </HeavyText>
+      </ExternalLink>
+    </div>
+    // </DesktopWrapper>
   )
 }
 
