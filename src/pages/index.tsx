@@ -71,12 +71,18 @@ const BannerContainer = styled.div`
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     background: transparent url(${heroMobileBanner}) center center no-repeat fixed;
     background-size: cover;
-    z-index: 5;
+    z-index: -5;
   `};
-  @media (max-width: 500px) {
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -5;
     background: transparent url(${heroMobileBanner}) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    z-index: 5;  
   }
 `
 
