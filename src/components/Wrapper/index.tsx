@@ -10,14 +10,14 @@ export const SectionImageBg = styled.div<{ height?: string; url?: string }>`
   width: 100%;
   height: ${({ height }) => (height ? height : "600px")};
   background: ${({ url }) =>
-    url ? `transparent url(${url}) 0% 0% no-repeat padding-box;` : "none"};
+    url ? `transparent url(${url}) center center no-repeat padding-box;` : "none"};
   opacity: 1;
 `
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   max-width: 1400px;
   margin: auto;
   box-sizing: border-box;

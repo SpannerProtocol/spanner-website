@@ -90,8 +90,9 @@ const HeroButtonWrapper = styled.div`
   justify-content: start;
   padding: 0rem;
   margin: auto;
-  ${({ theme }) => theme.mediaWidth.upToMedium`
-  padding: 1rem;
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+  padding: 2rem;
+  margin: 0 2rem;
   justify-content: center;
 `};
 `
@@ -104,7 +105,7 @@ const HeroButton1 = styled(ButtonPrimary)`
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
   font-size: 14px;
   margin: 1rem 0rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: 180px;
   height: auto;
 `};
@@ -118,40 +119,43 @@ const HeroButton2 = styled(ButtonTrans)`
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
   font-size: 14px;
   margin: 1rem 0rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: 180px;
   height: auto;
 `};
 `
 
 function HeroBanner() {
+  const theme = useContext(ThemeContext)
   return (
     <>
-      <CenterWrapper>
-        <BannerContainer className="Hero Banner">
-          <ContentWrapper>
-            <BannerTextContainer>
-              <HeaderWrapper>
-                <Header1>The Blockchain for Borderless Collaboration</Header1>
-              </HeaderWrapper>
-              <ThinText fontSize="24px" mobileFontSize="20px">
-                Making collaboration simple for everyone
-              </ThinText>
-              <HeroButtonWrapper>
-                <ExternalLink
-                  href="https://dapp.spanner.network"
-                  target="_blank"
-                >
-                  <HeroButton1>Launch App</HeroButton1>
-                </ExternalLink>
-                <SLink to="/docs/getting-started">
-                  <HeroButton2>Learn More</HeroButton2>
-                </SLink>
-              </HeroButtonWrapper>
-            </BannerTextContainer>
-          </ContentWrapper>
-        </BannerContainer>
-      </CenterWrapper>
+      <SectionDarkBg backgroundColor={theme.bg2}>
+        <CenterWrapper>
+          <BannerContainer className="Hero Banner">
+            <ContentWrapper>
+              <BannerTextContainer>
+                <HeaderWrapper>
+                  <Header1>The Blockchain for Borderless Collaboration</Header1>
+                </HeaderWrapper>
+                <ThinText fontSize="24px" mobileFontSize="20px">
+                  Making collaboration simple for everyone
+                </ThinText>
+                <HeroButtonWrapper>
+                  <ExternalLink
+                    href="https://dapp.spanner.network"
+                    target="_blank"
+                  >
+                    <HeroButton1>Launch App</HeroButton1>
+                  </ExternalLink>
+                  <SLink to="/docs/getting-started">
+                    <HeroButton2>Learn More</HeroButton2>
+                  </SLink>
+                </HeroButtonWrapper>
+              </BannerTextContainer>
+            </ContentWrapper>
+          </BannerContainer>
+        </CenterWrapper>
+      </SectionDarkBg>
     </>
   )
 }
@@ -320,49 +324,55 @@ function HowSpannerWorks() {
 }
 
 function BulletTrain() {
+  const theme = useContext(ThemeContext)
   return (
-    <SectionImageBg
-      height="700px"
-      url={bulletTrainBg}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <ContentWrapper>
-        <CenterWrapper>
-          <ContentSection>
-            <Grid columns="2" mobileColumns="1">
-              <GridBlock maxWidth="536px" textAlign="left">
-                <div />
-              </GridBlock>
-              <GridBlock maxWidth="536px" textAlign="left" mobileAlign="left">
-                <SpacedSection>
-                  <BigText color="#fff">Grow with Spanner BulletTrain</BigText>
-                </SpacedSection>
-                <SpacedSection>
-                  <ThinText color="#fff">
-                    <b>DPO for Growth in action.</b> Grow the community for your
-                    hot crypto project with BulletTrain. Start a BulletTrain on
-                    Spanner Blockchain to empower your community to grow itself
-                    through affiliate crowdfunding incentives.
-                  </ThinText>
-                </SpacedSection>
-                <ButtonLight
-                  fontSize="20px"
-                  height="56px"
-                  width="243px"
-                  marginRight="20px"
-                >
-                  Earn More BOLT
-                </ButtonLight>
-              </GridBlock>
-            </Grid>
-          </ContentSection>
-        </CenterWrapper>
-      </ContentWrapper>
-    </SectionImageBg>
+    <SectionDarkBg backgroundColor={theme.bg3}>
+      <CenterWrapper>
+        <SectionImageBg
+          height="700px"
+          url={bulletTrainBg}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <ContentWrapper>
+            <ContentSection>
+              <Grid columns="2" mobileColumns="1">
+                <GridBlock maxWidth="536px" textAlign="left">
+                  <div />
+                </GridBlock>
+                <GridBlock maxWidth="536px" textAlign="left" mobileAlign="left">
+                  <SpacedSection>
+                    <BigText color="#fff">
+                      Grow with Spanner BulletTrain
+                    </BigText>
+                  </SpacedSection>
+                  <SpacedSection>
+                    <ThinText color="#fff">
+                      <b>DPO for Growth in action.</b> Grow the community for
+                      your hot crypto project with BulletTrain. Start a
+                      BulletTrain on Spanner Blockchain to empower your
+                      community to grow itself through affiliate crowdfunding
+                      incentives.
+                    </ThinText>
+                  </SpacedSection>
+                  <ButtonLight
+                    fontSize="20px"
+                    height="56px"
+                    width="243px"
+                    marginRight="20px"
+                  >
+                    Earn More BOLT
+                  </ButtonLight>
+                </GridBlock>
+              </Grid>
+            </ContentSection>
+          </ContentWrapper>
+        </SectionImageBg>
+      </CenterWrapper>
+    </SectionDarkBg>
   )
 }
 
@@ -453,7 +463,7 @@ function OurPartners() {
     <ContentWrapper>
       <ContentSection>
         <CenterWrapper>
-          <Header2>Our Partners</Header2>
+          <Header2>Our Partner Candidates</Header2>
           <Grid columns="4" mobileColumns="1">
             {partnerLogos.map((logoFile, index) => (
               <GridBlock key={index}>
@@ -572,32 +582,36 @@ function OurCommunity() {
           </FlexWrapper>
         </ContentSection>
       </ContentWrapper>
-      <SectionImageBg
-        url={joinCommunityBanner}
-        height="434px"
-        style={{ display: "flex", alignItems: "center" }}
-      >
+      <SectionDarkBg backgroundColor={theme.bg3}>
         <CenterWrapper>
-          <Header2 color="#fff">
-            Interested in being a part of the borderless future?
-          </Header2>
-          <HeavyText color="#fff" fontSize="20px">
-            Join our community today.
-          </HeavyText>
-          <SpacedSection>
-            {socialLinks.map((social, index) => (
-              <ExternalLink key={index} href={social.link} target="_blank">
-                <img
-                  src={social.icon}
-                  width="24px"
-                  alt={`${social.name} icon`}
-                  style={{ padding: "1rem" }}
-                />
-              </ExternalLink>
-            ))}
-          </SpacedSection>
+          <SectionImageBg
+            url={joinCommunityBanner}
+            height="434px"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <CenterWrapper>
+              <Header2 color="#fff">
+                Interested in being a part of the borderless future?
+              </Header2>
+              <HeavyText color="#fff" fontSize="20px">
+                Join our community today.
+              </HeavyText>
+              <SpacedSection>
+                {socialLinks.map((social, index) => (
+                  <ExternalLink key={index} href={social.link} target="_blank">
+                    <img
+                      src={social.icon}
+                      width="24px"
+                      alt={`${social.name} icon`}
+                      style={{ padding: "1rem" }}
+                    />
+                  </ExternalLink>
+                ))}
+              </SpacedSection>
+            </CenterWrapper>
+          </SectionImageBg>
         </CenterWrapper>
-      </SectionImageBg>
+      </SectionDarkBg>
     </>
   )
 }

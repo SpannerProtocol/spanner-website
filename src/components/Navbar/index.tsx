@@ -19,7 +19,7 @@ import { ExternalLink, SLink } from "../Link"
 import { Pill } from "../Pill"
 import { HeavyText } from "../Text"
 import { CenterWrapper } from "../Wrapper"
-import SpannerDeck from "../../assets/spanner-deck-v1.22.pdf"
+import SpannerDeck from "../../assets/spanner-deck-v1.31.pdf"
 
 const navItems = [
   {
@@ -213,6 +213,7 @@ export function DesktopNav() {
                 href={navItem.link}
                 target="_blank"
                 padding="0 1.5rem"
+                fontSize="16px"
                 download
               >
                 {navItem.label}
@@ -220,12 +221,8 @@ export function DesktopNav() {
             )}
           </div>
         ))}
-        <ExternalLink
-          href="https://dapp.spanner.network"
-          target="_blank"
-          padding="0 1.5rem"
-        >
-          <HeavyText fontSize="16" color={theme.primary1} padding="0 1.15rem">
+        <ExternalLink href="https://dapp.spanner.network" target="_blank">
+          <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.15rem">
             Launch Dapp
           </HeavyText>
         </ExternalLink>

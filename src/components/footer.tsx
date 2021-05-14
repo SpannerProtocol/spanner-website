@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useContext } from "react"
 import styled, { ThemeContext } from "styled-components"
-import SpannerDeck from "../assets/spanner-deck-v1.22.pdf"
+import SpannerDeck from "../assets/spanner-deck-v1.31.pdf"
 import logo from "../images/logo-spanner-gradient.svg"
 import { ExternalLink, SLink } from "./Link"
 import { HeavyText, Text } from "./Text"
