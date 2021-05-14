@@ -73,6 +73,11 @@ const BannerContainer = styled.div`
     background-size: cover;
     z-index: 5;
   `};
+  @media (max-width: 500px) {
+    background: transparent url(${heroMobileBanner}) center center no-repeat fixed;
+    background-size: cover;
+    z-index: 5;  
+  }
 `
 
 const BannerTextContainer = styled.div`

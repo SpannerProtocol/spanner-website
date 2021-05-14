@@ -62,16 +62,20 @@ const MobileWrapper = styled.div`
   display: none;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     display: initial;
-
   `};
+  @media (max-width: 720px) {
+    display: initial;
+  }
 `
 
 const DesktopWrapper = styled.div`
   display: initial;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     display: none;
-
   `};
+  @media (max-width: 720px) {
+    display: none; 
+  }
 `
 
 const useStyles = makeStyles({
