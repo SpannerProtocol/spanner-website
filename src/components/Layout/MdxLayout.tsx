@@ -142,7 +142,6 @@ function getNavItems(navData: AllMdx) {
                         </>
                       )
                     } else {
-                      console.log(item)
                       return null
                     }
                   })}
@@ -178,7 +177,6 @@ function DocNav() {
       }
     }
   `)
-  console.log(navData)
 
   return (
     <>

@@ -4,6 +4,7 @@ module.exports = {
     description: `The blockchain for borderless collaboration. Create DPOs to collaborate transparently and fairly, powered by BOLT.`,
     author: `spannerprotocol`,
   },
+  pathPrefix: "/spanner-website",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

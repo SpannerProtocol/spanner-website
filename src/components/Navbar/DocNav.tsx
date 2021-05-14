@@ -21,9 +21,6 @@ interface GetMdxInfo {
 }
 
 function DesktopDocNav({ navData }: { navData: GetMdxInfo }) {
-  console.log(navData)
-  // return <></>
-  // console.log(navMeta)
   return (
     <>
       {Object.keys(navMeta.docs).map(category => (
