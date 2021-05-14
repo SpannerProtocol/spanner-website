@@ -69,21 +69,10 @@ const BannerContainer = styled.div`
   opacity: 1;
   z-index: 5;
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
-    background: transparent url(${heroMobileBanner}) center center no-repeat fixed;
+    background: transparent url(${heroMobileBanner}) center center no-repeat padding-box;
     background-size: cover;
     z-index: -5;
   `};
-  &:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    z-index: -5;
-    background: transparent url(${heroMobileBanner}) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 `
 
 const BannerTextContainer = styled.div`
