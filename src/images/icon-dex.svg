@@ -1,0 +1,26 @@
+<svg id="Dex_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51" viewBox="0 0 51 51">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_102" data-name="Rectangle 102" width="51" height="51" transform="translate(831 3261)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-831 -3261)" clip-path="url(#clip-path)">
+    <g id="Group_131" data-name="Group 131" transform="translate(-438.025 -42.313)">
+      <g id="Group_129" data-name="Group 129" transform="translate(1279.951 3318.289) rotate(30)">
+        <g id="money" transform="translate(0.77 0)">
+          <path id="Path_113" data-name="Path 113" d="M40.584,0C41.665,24.519,12.811,32.578,0,16.2" transform="translate(0 0)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <rect id="Rectangle_100" data-name="Rectangle 100" width="7" height="2" rx="1" transform="matrix(0.07, 0.998, -0.998, 0.07, 1.376, 15.166)" fill="#262a41"/>
+        <rect id="Rectangle_101" data-name="Rectangle 101" width="7" height="2" rx="1" transform="translate(-0.103 15.007) rotate(8)" fill="#262a41"/>
+      </g>
+      <path id="Path_117" data-name="Path 117" d="M-8.135-15.8a.668.668,0,0,1-.471-.188.632.632,0,0,1-.2-.484v-1.856a9.314,9.314,0,0,1-3.4-1.022,5.734,5.734,0,0,1-2.125-1.9,4.732,4.732,0,0,1-.766-2.38.54.54,0,0,1,.175-.39.569.569,0,0,1,.417-.175h3.389a1.009,1.009,0,0,1,.524.121,1.852,1.852,0,0,1,.417.363,2.814,2.814,0,0,0,1.116,1.156,4.061,4.061,0,0,0,2.084.457,4.6,4.6,0,0,0,2.34-.484,1.478,1.478,0,0,0,.807-1.318,1.245,1.245,0,0,0-.417-.968,3.721,3.721,0,0,0-1.3-.672A26.834,26.834,0,0,0-8.188-26.2a10.912,10.912,0,0,1-4.841-1.963,4.587,4.587,0,0,1-1.587-3.738,4.937,4.937,0,0,1,1.56-3.671,7.228,7.228,0,0,1,4.249-1.869v-1.883a.632.632,0,0,1,.2-.484A.668.668,0,0,1-8.135-40H-5.9a.655.655,0,0,1,.484.188.655.655,0,0,1,.188.484v1.936a8.029,8.029,0,0,1,3.052,1.116,6.305,6.305,0,0,1,1.95,1.869A4.25,4.25,0,0,1,.5-32.335a.561.561,0,0,1-.161.39.526.526,0,0,1-.4.175h-3.55a1.112,1.112,0,0,1-.524-.108,1.029,1.029,0,0,1-.363-.35,1.772,1.772,0,0,0-.874-1.049,3.353,3.353,0,0,0-1.762-.43A3.342,3.342,0,0,0-9-33.277a1.422,1.422,0,0,0-.645,1.264,1.3,1.3,0,0,0,.363.941,3.234,3.234,0,0,0,1.183.686,16.946,16.946,0,0,0,2.353.632,16.942,16.942,0,0,1,3.98,1.143A5.024,5.024,0,0,1,.418-26.849a4.944,4.944,0,0,1,.7,2.743A4.911,4.911,0,0,1-.6-20.233,8.507,8.507,0,0,1-5.23-18.351v1.883a.655.655,0,0,1-.188.484A.655.655,0,0,1-5.9-15.8Z" transform="translate(1301.404 3355.979)" fill="#ffa521"/>
+      <g id="Group_132" data-name="Group 132" transform="translate(1308.409 3339.424) rotate(-150)">
+        <g id="money-2" data-name="money" transform="translate(1.389 0)">
+          <path id="Path_113-2" data-name="Path 113" d="M40.584,0C41.665,24.519,12.811,32.578,0,16.2" transform="translate(0)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <rect id="Rectangle_100-2" data-name="Rectangle 100" width="7" height="2" rx="1" transform="matrix(0.07, 0.998, -0.998, 0.07, 1.995, 15.166)" fill="#262a41"/>
+        <rect id="Rectangle_101-2" data-name="Rectangle 101" width="7" height="2" rx="1" transform="translate(0.516 15.007) rotate(8)" fill="#262a41"/>
+      </g>
+    </g>
+  </g>
+</svg>
