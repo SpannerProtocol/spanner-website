@@ -4,6 +4,7 @@ export const SectionDarkBg = styled.div<{ backgroundColor?: string }>`
   width: 100%;
   background: ${({ backgroundColor, theme }) =>
     backgroundColor ? backgroundColor : theme.bg2};
+  z-index: -1;
 `
 
 export const SectionImageBg = styled.div<{ height?: string; url?: string }>`
