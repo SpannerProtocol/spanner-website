@@ -705,8 +705,8 @@ export default function IndexPage() {
   return (
     <Layout>
       <Seo
-        title="Borderless Collaboration with DPOs and BOLT"
-        description="The blockchain that enables borderless collaboration powered by the BOLT token."
+        title="Spanner Protocol | Borderless Collaboration via DPOs & BOLT"
+        description={`The blockchain that enables borderless collaboration powered by the BOLT token. Be a part of the DAO revolution. Manage your crypto project with Spanner DPOs today!`}
       />
       <PageWrapper>
         <HeroBanner />
