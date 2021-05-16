@@ -1,17 +1,34 @@
-import React from 'react'
 import { MDXProvider } from "@mdx-js/react"
-import { Header1, Header2, Header3, Header4, Text } from '../Text'
+import { STable, STd, STh, STr } from "../../components/Table"
+import React from "react"
+import {
+  DocAnchorText,
+  DocHeader1,
+  DocHeader2,
+  DocHeader3,
+  DocHeader4,
+  DocText,
+} from "../Text"
+import { DocListItem } from "../../components/List"
 
 export default function MDXStyleProvider({ children }) {
   return (
     <MDXProvider
       components={{
-        // Map HTML element tag to React component
-        h1: Header1,
-        h2: Header2,
-        h3: Header3,
-        h4: Header4,
-        p: Text,
+        // General
+        h1: DocHeader1,
+        h2: DocHeader2,
+        h3: DocHeader3,
+        h4: DocHeader4,
+        p: DocText,
+        a: DocAnchorText,
+        // Table
+        table: STable,
+        tr: STr,
+        td: STd,
+        th: STh,
+        // Lists
+        li: DocListItem,
       }}
     >
       {children}

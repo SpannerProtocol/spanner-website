@@ -1,0 +1,13 @@
+# documentation sidebar
+- label: 'General'
+  items:
+    - label: 'Overview'
+      link: '/docs/getting-started'
+    - label: 'Glossary'
+      link: '/docs/glossary'
+- label: 'Learn'
+  items:
+    - label: 'Roadmap'
+      link: '/docs/roadmap'
+    - label: 'Web3'
+      link: '/docs/web3'

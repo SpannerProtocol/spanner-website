@@ -31,9 +31,11 @@ export const ReverseGrid = styled(Grid)`
 export const GridBlock = styled.div<{ maxWidth?: string; textAlign?: string, mobileAlign?: string }>`
   display: block;
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
-  margin: auto;
+  margin: 0 auto;
+  padding: 0.5rem 0;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "300px")};
   ${({ mobileAlign, theme }) => theme.mediaWidth.upToExtraSmall`
     text-align: ${mobileAlign ? mobileAlign : "center"};
+    padding: 1.5rem 0;
   `};
 `

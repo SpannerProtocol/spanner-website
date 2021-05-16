@@ -6,14 +6,16 @@ import { Button as RebassButton } from "rebass/styled-components"
 const Base = styled(RebassButton)<{
   padding?: string
   width?: string
+  height?: string
   borderRadius?: string
   altDisabledStyle?: boolean
   fontSize?: string
   mobileFontSize?: string
 }>`
   padding: ${({ padding }) => (padding ? padding : "0.5rem")};
-  width: ${({ width }) => (width ? width : "100%")};
-  font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
+  width: ${({ width }) => (width ? width : "200px")};
+  height: ${({ height }) => (height ? height : "50px")};
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : "16px")};
   font-weight: 700;
   text-align: center;
   border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "5px")};
@@ -38,6 +40,8 @@ const Base = styled(RebassButton)<{
   ${({ mobileFontSize, theme }) => theme.mediaWidth.upToExtraSmall`
   font-size: ${mobileFontSize ? mobileFontSize : "12px"};
   padding: 0.5rem;
+  width: 150px;
+  height: 50px;
 `};
 `
 

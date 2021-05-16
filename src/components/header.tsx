@@ -5,15 +5,19 @@ import logo from "../images/logo-spanner-gradient.svg"
 import { SLink } from "./Link"
 import { RowBetween } from "./rows"
 import { ContentWrapper } from "./Wrapper"
+import PropTypes from "prop-types"
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.div<{ fixed: boolean; withBorder?: boolean; }>`
   display: flex;
+  position: ${({ fixed }) => fixed ? 'fixed' : 'inherit' };
+  border: ${({ withBorder, theme }) => withBorder ? `1px solid ${theme.bg3}` : 'none'};
   align-items: center;
   justify-content: left;
   width: 100%;
   background: #fff;
   margin-bottom: 1.5rem;
   height: 70px;
+  z-index: 100;
 `
 
 const LogoTitle = styled.p`
@@ -36,9 +40,9 @@ const FlexWrapper = styled.div`
   padding: 0.25rem;
 `
 
-export default function Header() {
+export default function Header({ siteTitle, fixed, withBorder }: { siteTitle: string; fixed?: boolean; withBorder?: boolean }) {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper fixed={fixed ? fixed : false} withBorder={withBorder}>
       <ContentWrapper>
         <RowBetween>
           <SLink to="/">
@@ -46,7 +50,7 @@ export default function Header() {
               <LogoWrapper>
                 <img src={logo} style={{ width: "44px" }} />
               </LogoWrapper>
-              <LogoTitle style={{ margin: 0 }}>Spanner Protocol</LogoTitle>
+              <LogoTitle style={{ margin: 0 }}>{siteTitle}</LogoTitle>
             </FlexWrapper>
           </SLink>
           <NavBar />
@@ -54,4 +58,12 @@ export default function Header() {
       </ContentWrapper>
     </HeaderWrapper>
   )
+}
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: `Spanner Protocol`,
 }

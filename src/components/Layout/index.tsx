@@ -7,24 +7,14 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "../header"
 import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from "../../theme"
 import Footer from "../footer"
 import MDXStyleProvider from "./MdxProvider"
+import useSiteUrl from "hooks/useSiteUrl"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  const siteUrl = useSiteUrl()
   return (
     <>
       <FixedGlobalStyle />
@@ -32,9 +22,11 @@ const Layout = ({ children }) => {
         <ThemedGlobalStyle />
         <MDXStyleProvider>
           {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-          <Header />
+          {!siteUrl.includes("/docs") && (
+            <Header siteTitle={`Spanner Protocol`} fixed={false} />
+          )}
           <main>{children}</main>
-          <Footer />
+          {!siteUrl.includes("/docs") && <Footer />}
         </MDXStyleProvider>
       </ThemeProvider>
     </>

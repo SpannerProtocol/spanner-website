@@ -90,7 +90,7 @@ const HeroButtonWrapper = styled.div`
   flex-wrap: wrap;
   alignitems: center;
   justify-content: start;
-  padding: 0rem;
+  padding: 2rem 0;
   margin: auto;
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
   padding: 2rem;
@@ -100,10 +100,11 @@ const HeroButtonWrapper = styled.div`
 `
 
 const HeroButton1 = styled(ButtonPrimary)`
-  font-size: 20px;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 16px;
   margin: 1rem 1rem 1rem 0rem;
-  width: 216px;
-  height: 56px;
+  width: 200px;
+  height: 50px;
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
   font-size: 14px;
   margin: 1rem 0rem;
@@ -114,10 +115,11 @@ const HeroButton1 = styled(ButtonPrimary)`
 `
 
 const HeroButton2 = styled(ButtonTrans)`
-  font-size: 20px;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 16px;
   margin: 1rem 0rem 1rem 1rem;
-  width: 216px;
-  height: 56px;
+  width: 200px;
+  height: 50px;
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
   font-size: 14px;
   margin: 1rem 0rem;
@@ -138,9 +140,9 @@ function HeroBanner() {
               <HeaderWrapper>
                 <Header1>The Blockchain for Borderless Collaboration</Header1>
               </HeaderWrapper>
-              <ThinText fontSize="24px" mobileFontSize="20px">
+              <Text fontSize="24px" mobileFontSize="20px" fontWeight="300">
                 Making collaboration simple for everyone
-              </ThinText>
+              </Text>
               <HeroButtonWrapper>
                 <ExternalLink
                   href="https://dapp.spanner.network"
@@ -180,9 +182,11 @@ function IntroducingDPO() {
         <ContentSection>
           <Grid columns="3" mobileColumns="1">
             <GridBlock>
-              <img src={decentralizedIcon} style={{ width: "53px" }} />
+              <ImageWrapper height="55px">
+                <img src={decentralizedIcon} style={{ width: "53px" }} />
+              </ImageWrapper>
               <Header4>Decentralized</Header4>
-              <Text>Completely Borderless</Text>
+              <Text fontSize="16px">Completely Borderless</Text>
               <LightText>
                 Work with anyone around the world. Collaborate with transparency
                 and trust. Measure contributions accurately and distribute
@@ -190,18 +194,24 @@ function IntroducingDPO() {
               </LightText>
             </GridBlock>
             <GridBlock>
-              <img src={programmableIcon} style={{ width: "53px" }} />
+              <ImageWrapper height="55px">
+                <img src={programmableIcon} style={{ width: "53px" }} />
+              </ImageWrapper>
               <Header4>Programmable</Header4>
-              <Text>Do Anything, With Anyone, At Any Scale</Text>
+              <Text fontSize="16px">
+                Do Anything, With Anyone, At Any Scale
+              </Text>
               <LightText>
                 Program any blockchain activity, membership structures and
                 composition to other DPOs.
               </LightText>
             </GridBlock>
             <GridBlock>
-              <img src={organizationIcon} style={{ width: "53px" }} />
+              <ImageWrapper height="55px">
+                <img src={organizationIcon} style={{ width: "53px" }} />
+              </ImageWrapper>
               <Header4>Organization</Header4>
-              <Text>Behave like a real organization</Text>
+              <Text fontSize="16px">Behave like a real organization</Text>
               <LightText>
                 DPO supports collaboration of any size, from two person
                 start-ups, to multinational corporations. DPOs can work
@@ -293,24 +303,20 @@ function HowSpannerWorks() {
                 />
               </ImageWrapper>
             </CenterWrapper>
-            <CenterWrapper style={{ display: "flex" }}>
-              <div style={{ width: "180px", paddingRight: "1rem" }}>
+            <CenterWrapper style={{ display: "flex", flexWrap: "wrap" }}>
+              <div style={{ margin: "0 1rem", padding: "1rem" }}>
                 <ExternalLink
                   href="https://dapp.spanner.network/dex"
                   target="_blank"
                 >
-                  <ButtonPrimary fontSize="20px" width="100%" padding="0.8rem">
+                  <ButtonPrimary fontSize="20px" padding="0.8rem">
                     Get BOLT
                   </ButtonPrimary>
                 </ExternalLink>
               </div>
-              <div style={{ width: "180px", paddingLeft: "1rem" }}>
+              <div style={{ margin: "0 1rem", padding: "1rem" }}>
                 <SLink to="/docs/architecture" target="_blank">
-                  <ButtonSecondary
-                    fontSize="20px"
-                    width="100%"
-                    padding="0.8rem"
-                  >
+                  <ButtonSecondary fontSize="20px" padding="0.8rem">
                     About Spanner
                   </ButtonSecondary>
                 </SLink>
@@ -326,7 +332,7 @@ function HowSpannerWorks() {
 function BulletTrain() {
   const theme = useContext(ThemeContext)
   return (
-    <SectionDarkBg backgroundColor={theme.bg3}>
+    <SectionDarkBg backgroundColor={theme.bg5}>
       <CenterWrapper>
         <SectionImageBg
           height="700px"
@@ -350,7 +356,7 @@ function BulletTrain() {
                     </BigText>
                   </SpacedSection>
                   <SpacedSection>
-                    <ThinText color="#fff">
+                    <ThinText color="#fff" style={{ padding: "1rem 0" }}>
                       <b>DPO for Growth in action.</b> Grow the community for
                       your hot crypto project with BulletTrain. Start a
                       BulletTrain on Spanner Blockchain to empower your
@@ -358,14 +364,16 @@ function BulletTrain() {
                       incentives.
                     </ThinText>
                   </SpacedSection>
-                  <ButtonLight
-                    fontSize="20px"
-                    height="56px"
-                    width="243px"
-                    marginRight="20px"
-                  >
-                    Earn More BOLT
-                  </ButtonLight>
+                  <SLink to="/docs/bullettrain">
+                    <ButtonLight
+                      fontSize="20px"
+                      height="56px"
+                      width="243px"
+                      marginRight="20px"
+                    >
+                      Earn More BOLT
+                    </ButtonLight>
+                  </SLink>
                 </GridBlock>
               </Grid>
             </ContentSection>
@@ -401,7 +409,7 @@ function AudienceLearnMore() {
   ]
   return (
     <>
-      <SectionDarkBg backgroundColor={theme.bg3}>
+      <SectionDarkBg backgroundColor={theme.bg5}>
         <ContentWrapper>
           <ContentSection>
             <Grid columns="2" mobileColumns="1">
@@ -582,7 +590,7 @@ function OurCommunity() {
           </FlexWrapper>
         </ContentSection>
       </ContentWrapper>
-      <SectionDarkBg backgroundColor={theme.bg3}>
+      <SectionDarkBg backgroundColor={theme.bg5}>
         <CenterWrapper>
           <SectionImageBg
             url={joinCommunityBanner}
@@ -603,7 +611,7 @@ function OurCommunity() {
                       src={social.icon}
                       width="24px"
                       alt={`${social.name} icon`}
-                      style={{ padding: "1rem" }}
+                      style={{ margin: "1rem" }}
                     />
                   </ExternalLink>
                 ))}
@@ -621,7 +629,7 @@ const timelineData = [
     headline: "Research",
     items: [
       "Hammer Testnet development",
-      "DPO Research an Architecture",
+      "DPO Research and Architecture",
       "Dex and Bridge development",
       "BulletTrain Development",
     ],
@@ -645,7 +653,7 @@ const timelineData = [
     items: [
       "Spanner Mainnet launch",
       "DPO Smart Contract Research",
-      "BulletTrain Launch (for Spanner BOLT only)",
+      "BulletTrain Launch (Spanner BOLT)",
       "Rococo Parachain Research",
     ],
     date: "2021 Q2",
@@ -657,7 +665,7 @@ const timelineData = [
       "Parachain Offering",
       "DPO V2 Research",
       "DPO Off-chain Oracle Research",
-      "BulletTrain open for other Projects",
+      "BulletTrain open for all Projects",
       "Growth Marketplace",
     ],
     date: "2021 Q3",
@@ -697,8 +705,8 @@ export default function IndexPage() {
   return (
     <Layout>
       <Seo
-        title="Spanner Protocol"
-        description="The blockchain that enables borderless collaboration powered by the BOLT."
+        title="Borderless Collaboration with DPOs and BOLT"
+        description="The blockchain that enables borderless collaboration powered by the BOLT token."
       />
       <PageWrapper>
         <HeroBanner />

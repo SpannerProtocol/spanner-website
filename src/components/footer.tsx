@@ -1,3 +1,4 @@
+import useSiteUrl from "hooks/useSiteUrl"
 import * as React from "react"
 import { useContext } from "react"
 import styled, { ThemeContext } from "styled-components"
@@ -119,11 +120,11 @@ export default function Footer() {
               to={data.link}
               style={{ color: theme.text1, textDecoration: "none" }}
             >
-              <Text>{data.label}</Text>
+              <Text padding="0">{data.label}</Text>
             </SLink>
           ) : (
             <ExternalLink href={data.link}>
-              <Text>{data.label}</Text>
+              <Text padding="0">{data.label}</Text>
             </ExternalLink>
           )}
         </li>

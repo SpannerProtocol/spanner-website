@@ -1,5 +1,7 @@
 import { Drawer, makeStyles } from "@material-ui/core"
+import Header from "components/header"
 import { SLink } from "components/Link"
+import { SideBar } from "components/Sidebar"
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useContext, useMemo } from "react"
 import { Menu } from "react-feather"
@@ -7,9 +9,7 @@ import { useMedia } from "react-use"
 import styled, { ThemeContext } from "styled-components"
 import Layout from "."
 import navMeta from "../Navbar/docnav.json"
-import { HeavyText, Text } from "../Text"
-import { ContentSection, ContentWrapper } from "../Wrapper"
-
+import { DocsContentSection } from "../Wrapper"
 interface FrontMatter {
   title: string | null
   path: string | null
@@ -45,10 +45,12 @@ const HamburgerWrapper = styled.div`
 
 const DocsGrid = styled.div`
   display: grid;
-  width: 100%;
-  grid-template-columns: min(180px) auto;
-  grid-column-gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 30vw auto;
+  grid-column-gap: 5vw;
   grid-row-gap: 1rem;
+  justify-content: flex-start;
 
   ${({ theme }) => theme.mediaWidth.upToSmall`
   display: flex;
@@ -79,6 +81,37 @@ const IconWrapper = styled.div`
   background: ${({ theme }) => theme.primary1};
 `
 
+const SidebarCategory = styled.p`
+  text-align: left;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #707070;
+  word-spacing: 0.5rem;
+`
+
+const SidebarSubCategory = styled.p`
+  text-align: left;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: #707070;
+  word-spacing: 0.5rem;
+`
+
+const SidebarItem = styled.p<{ nested?: boolean }>`
+  text-align: left;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+  color: ${({ theme }) => theme.text1};
+  opacity: 1;
+  padding-left: ${({ nested }) => (nested ? "1rem" : "0")};
+`
+
 function getNavItems(navData: AllMdx) {
   // Creating a map for access to each link's info
   const navMap = useMemo(() => {
@@ -96,56 +129,51 @@ function getNavItems(navData: AllMdx) {
     <>
       {Object.keys(navMeta.docs).map((category, index) => (
         <>
-          <HeavyText key={index} fontSize="20px" padding="0.5rem 0">
-            {category}
-          </HeavyText>
-          {navMeta.docs[category].map(categoryItem => {
+          <SidebarCategory key={index}>{category}</SidebarCategory>
+          {navMeta.docs[category].map((categoryItem, index) => {
             if (typeof categoryItem === "string") {
               if (Object.keys(navMap).includes(categoryItem)) {
                 return (
-                  <>
+                  <div key={index}>
                     {navMap[categoryItem].path && (
                       <SLink to={navMap[categoryItem].path as string}>
-                        <Text
-                          key={navMap[categoryItem].title}
-                          padding="0.15rem 0"
-                        >
+                        <SidebarItem key={navMap[categoryItem].title}>
                           {navMap[categoryItem].title}
-                        </Text>
+                        </SidebarItem>
                       </SLink>
                     )}
-                  </>
+                  </div>
                 )
               } else {
                 return null
               }
             } else if (typeof categoryItem === "object") {
               return (
-                <>
-                  <HeavyText fontSize="16px" padding="0.5rem 0">
+                <div key={index}>
+                  <SidebarSubCategory>
                     {categoryItem.subcategory}
-                  </HeavyText>
+                  </SidebarSubCategory>
                   {categoryItem.items.map(item => {
                     if (Object.keys(navMap).includes(item)) {
                       return (
-                        <>
+                        <div key={navMap[item].title}>
                           {navMap[item].path && (
                             <SLink to={navMap[item].path as string}>
-                              <Text
+                              <SidebarItem
                                 key={navMap[item].title}
-                                padding="0.15rem 0"
+                                nested={true}
                               >
                                 {navMap[item].title}
-                              </Text>
+                              </SidebarItem>
                             </SLink>
                           )}
-                        </>
+                        </div>
                       )
                     } else {
                       return null
                     }
                   })}
-                </>
+                </div>
               )
             } else {
               return null
@@ -158,37 +186,11 @@ function getNavItems(navData: AllMdx) {
 }
 
 function DesktopDocNav({ navData }: { navData: AllMdx }) {
-  return <>{getNavItems(navData)}</>
-}
-
-function DocNav() {
-  const isMobile = useMedia("(max-width: 720px)")
-  const navData = useStaticQuery<AllMdx>(graphql`
-    query GetMdxInfo {
-      allMdx {
-        nodes {
-          frontmatter {
-            title
-            path
-            category
-            sub_category
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      {!isMobile ? (
-        <DesktopWrapper>
-          <DesktopDocNav navData={navData} />
-        </DesktopWrapper>
-      ) : (
-        <MobileWrapper>
-          <MobileDocNav navData={navData} />
-        </MobileWrapper>
-      )}
+      <SideBar>
+        <div style={{ padding: "0 3rem" }}>{getNavItems(navData)}</div>
+      </SideBar>
     </>
   )
 }
@@ -228,8 +230,40 @@ function MobileDocNav({ navData }: { navData: AllMdx }) {
         </IconWrapper>
       </HamburgerWrapper>
       <Drawer anchor={"right"} open={isOpen} onClose={toggleDrawer(false)}>
-        <div style={{ padding: "1rem" }}>{getNavItems(navData)}</div>
+        <div style={{ padding: "1rem 2.5rem" }}>{getNavItems(navData)}</div>
       </Drawer>
+    </>
+  )
+}
+
+function DocNav() {
+  const isMobile = useMedia("(max-width: 720px)")
+  const navData = useStaticQuery<AllMdx>(graphql`
+    query GetMdxInfo {
+      allMdx {
+        nodes {
+          frontmatter {
+            title
+            path
+            category
+            sub_category
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      {!isMobile ? (
+        <DesktopWrapper>
+          <DesktopDocNav navData={navData} />
+        </DesktopWrapper>
+      ) : (
+        <MobileWrapper>
+          <MobileDocNav navData={navData} />
+        </MobileWrapper>
+      )}
     </>
   )
 }
@@ -237,14 +271,11 @@ function MobileDocNav({ navData }: { navData: AllMdx }) {
 export default function MdxLayout({ children }) {
   return (
     <Layout>
-      <ContentWrapper>
-        <DocsGrid>
-          <DocNav />
-          <ContentSection style={{ overflow: "scroll" }}>
-            {children}
-          </ContentSection>
-        </DocsGrid>
-      </ContentWrapper>
+      <Header siteTitle={`Spanner Protocol`} fixed={true} withBorder={true} />
+      <DocsGrid>
+        <DocNav />
+        <DocsContentSection>{children}</DocsContentSection>
+      </DocsGrid>
     </Layout>
   )
 }

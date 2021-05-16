@@ -11,7 +11,9 @@ export const SectionImageBg = styled.div<{ height?: string; url?: string }>`
   width: 100%;
   height: ${({ height }) => (height ? height : "600px")};
   background: ${({ url }) =>
-    url ? `transparent url(${url}) center center no-repeat padding-box;` : "none"};
+    url
+      ? `transparent url(${url}) center center no-repeat padding-box;`
+      : "none"};
   opacity: 1;
 `
 
@@ -68,6 +70,20 @@ export const ContentSection = styled.div<{
   `};
 `
 
+export const DocsContentSection = styled(ContentSection)`
+  background: ${({ theme }) => theme.white};
+  padding-top: 80px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-y: scroll;
+  max-width: 800px;
+
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+  padding-left: 1rem;
+  padding-right: 1rem;
+`};
+`
+
 export const CenterWrapper = styled.div`
   text-align: center;
   justify-content: center;
@@ -97,6 +113,7 @@ export const ImageWrapper = styled.div<{
   justifyContent?: string
   alignItems?: string
   maxWidth?: string
+  height?: string
 }>`
   display: flex;
   justify-content: ${({ justifyContent }) =>
@@ -105,4 +122,5 @@ export const ImageWrapper = styled.div<{
   width: 100%;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "400px")};
   margin: auto;
+  height: ${({ height }) => height ? height : 'initial'};
 `

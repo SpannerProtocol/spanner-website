@@ -1,25 +1,25 @@
 {
   "docs": {
-    "General": ["getting-started", "glossary"],
-    "Learn": [
+    "📄 GENERAL": ["getting-started", "glossary"],
+    "🧑🏼‍💻 LEARN": [
 		"roadmap", 
 		"web3",
 		"parameters",
     	{
-    		"subcategory": "Basics",
+    		"subcategory": "BASICS",
     		"items": ["architecture", "bolt", "governance"]
     	},
     	{
-    		"subcategory": "DeFi",
+    		"subcategory": "DEFI",
     		"items": ["dex", "yieldfarming"]
 		},
 		{
-    		"subcategory": "BulletTrain",
+    		"subcategory": "BULLETTRAIN",
     		"items": ["bullettrain", "dpo-rules"]
     	}
 		],
-		"Use": ["spanner-dapp", "supported-wallets"],
-    "Build": ["build-on-spanner", "integration-guide", "tools"],
-    "Maintain": ["network-maintainers", "collator"]
+		"👛 USE": ["spanner-dapp", "supported-wallets"],
+    "🔧 BUILD": ["build-on-spanner", "integration-guide", "tools"],
+    "⚖️ MAINTAIN": ["network-maintainers", "collator"]
   }
 }

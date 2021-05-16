@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import styled, { ThemeContext } from "styled-components"
-import { HeavyText, ThinText, Text } from "../Text"
+import { HeavyText, Text } from "../Text"
 import { CenterWrapper } from "../Wrapper"
 
 interface TimelineProps {
@@ -94,7 +94,7 @@ export default function Timeline({
           display: "block",
           textAlign: "left",
           width: "300px",
-          paddingBottom: "1rem",
+          paddingBottom: "1.5rem",
         }}
       >
         <HeavyText fontSize="16px" mobileFontSize="14px">
@@ -102,8 +102,10 @@ export default function Timeline({
         </HeavyText>
         <ul style={{ margin: "0", paddingLeft: "1.35rem" }}>
           {items.map((item, index) => (
-            <li style={{ fontSize: "11px" }} key={index}>
-              <Text fontSize="12px" color={theme.text5}>{item}</Text>
+            <li style={{ fontSize: "11px", lineHeight: "1.5" }} key={index}>
+              <Text padding="0" fontSize="12px" color={theme.text5}>
+                {item}
+              </Text>
             </li>
           ))}
         </ul>

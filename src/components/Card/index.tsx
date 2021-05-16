@@ -43,5 +43,6 @@ export const CardIconGrid = styled(Card)<{ columns?: string }>`
   grid-template-columns: min(80px) auto min(80px);
   grid-column-gap: 0.35rem;
   grid-row-gap: 0.35rem;
+  height: 140px;
   `};
 `
