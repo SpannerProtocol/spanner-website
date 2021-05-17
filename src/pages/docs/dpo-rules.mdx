@@ -62,7 +62,7 @@ An ACTIVE DPO becomes COMPLETED upon a successful release of funds from the _Wit
 
 The Management Fee is applied to each Yield release and is determined by these rules:
 
-- **Skin In the Game**: The fee is set as (5 + Z)%, where Z is the number of seats bought by the DPO Manager on creation. This fee will stay the same even if a manager decides to buy additional seats at a later time.
+- **Skin In the Game**: The fee is set as (Base + Seats)%, where Base is a fee from 0 - 5% and Seats is the number of seats bought by the DPO Manager on creation. This fee will stay the same even if a manager decides to buy additional seats at a later time.
 - **Lifetime Sentence**: Once ACTIVE, the Manager has 7-days to purchase a target. After this period, any Member can act on behalf of the DPO and the Management Fee will be permanently slashed in half (to punish the lazy manager).
 
 Note: a DPO Member will act through its Manager.
@@ -125,7 +125,7 @@ The emitted _Referral Points_ will then be caught by referrers as follows:
 - if the Member has an _External Referrer_, its External Referrer will catch 30%.
 - the remaining will be caught as follows:
   - if the _Internal Referrer_ is the _Manager_, the _Manager_ will catch 100%
-  - if the _Internal Referrer_ is a _Member_, the _Internal Referrer_ will catch 80%, and the _Internal Referrer_'s _Internal Referrer_ will catch the remaining 20%
+  - if the _Internal Referrer_ is a _Member_, the _Internal Referrer_ will catch the _Direct Referral Rate_, and the _Internal Referrer_'s _Internal Referrer_ will catch the remaining (100% - Direct Referral Rate, known as the 2nd Degree Referral Rate).
 
 #### Divide
 
