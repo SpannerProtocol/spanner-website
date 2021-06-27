@@ -2,10 +2,11 @@ import * as React from "react"
 import styled from "styled-components"
 import NavBar from "./Navbar"
 import logo from "../images/logo-spanner-gradient.svg"
-import { SLink } from "./Link"
+import { SLocalizedLink } from "./Link"
 import { RowBetween } from "./rows"
 import { ContentWrapper } from "./Wrapper"
 import PropTypes from "prop-types"
+import { useTranslation } from "react-i18next"
 
 const HeaderWrapper = styled.div<{ fixed: boolean; withBorder?: boolean; }>`
   display: flex;
@@ -41,18 +42,19 @@ const FlexWrapper = styled.div`
 `
 
 export default function Header({ siteTitle, fixed, withBorder }: { siteTitle: string; fixed?: boolean; withBorder?: boolean }) {
+  const { i18n } = useTranslation()
   return (
     <HeaderWrapper fixed={fixed ? fixed : false} withBorder={withBorder}>
       <ContentWrapper>
         <RowBetween>
-          <SLink to="/">
+          <SLocalizedLink to="/" language={i18n.language}>
             <FlexWrapper>
               <LogoWrapper>
                 <img src={logo} style={{ width: "44px" }} />
               </LogoWrapper>
               <LogoTitle style={{ margin: 0 }}>{siteTitle}</LogoTitle>
             </FlexWrapper>
-          </SLink>
+          </SLocalizedLink>
           <NavBar />
         </RowBetween>
       </ContentWrapper>

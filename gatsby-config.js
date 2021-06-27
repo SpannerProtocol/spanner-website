@@ -3,6 +3,7 @@ module.exports = {
     title: `Spanner Protocol`,
     description: `The blockchain for borderless collaboration. Create DPOs to collaborate transparently and fairly, powered by BOLT.`,
     author: `spannerprotocol`,
+    siteUrl:`https://www.spanner.network`
   },
   pathPrefix: "/spanner-website",
   plugins: [
@@ -66,6 +67,22 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/docs`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+        defaultLang: `en`,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n-react-i18next`,
+      options: {
+        locales: `./i18n/react-i18next`,
+        i18nextOptions: {
+          ns: ["translation"],
+        },
       },
     },
     {

@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import styled, { ThemeContext } from "styled-components"
 import { HeavyText, Text } from "../Text"
 import { CenterWrapper } from "../Wrapper"
+import { useTranslation } from "react-i18next"
 
 interface TimelineProps {
   date: string
@@ -71,6 +72,7 @@ export default function Timeline({
   headline,
 }: TimelineProps) {
   const theme = useContext(ThemeContext)
+  const { t } = useTranslation()
   return (
     <TimelineGrid>
       <div style={{ textAlign: "right" }}>
@@ -98,13 +100,13 @@ export default function Timeline({
         }}
       >
         <HeavyText fontSize="16px" mobileFontSize="14px">
-          {headline}
+          {t(headline)}
         </HeavyText>
         <ul style={{ margin: "0", paddingLeft: "1.35rem" }}>
           {items.map((item, index) => (
             <li style={{ fontSize: "11px", lineHeight: "1.5" }} key={index}>
               <Text padding="0" fontSize="12px" color={theme.text5}>
-                {item}
+                {t(item)}
               </Text>
             </li>
           ))}

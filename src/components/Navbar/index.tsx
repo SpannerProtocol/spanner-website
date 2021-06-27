@@ -15,11 +15,12 @@ import React, { useContext, useState } from "react"
 import { useMedia } from "react-use"
 import hamburgerIcon from "../../images/icon-hamburger-gradient.svg"
 import styled, { ThemeContext } from "styled-components"
-import { ExternalLink, SLink } from "../Link"
+import { ExternalLink, SLocalizedLink, SLink } from "../Link"
 import { Pill } from "../Pill"
-import { HeavyText } from "../Text"
+import { Text, HeavyText } from "../Text"
 import { CenterWrapper } from "../Wrapper"
 import SpannerDeck from "../../assets/spanner-deck-v1.31.pdf"
+import { useTranslation } from "react-i18next"
 
 const navItems = [
   {
@@ -57,20 +58,20 @@ const HamburgerWrapper = styled.div`
     opacity: 0.9;
   }
 `
-
-const MobileWrapper = styled.div`
-  display: none;
-  ${({ theme }) => theme.mediaWidth.upToSmall`
-    display: initial;
-  `};
-`
-
-const DesktopWrapper = styled.div`
-  display: initial;
-  ${({ theme }) => theme.mediaWidth.upToSmall`
-    display: none;
-  `};
-`
+//
+// const MobileWrapper = styled.div`
+//   display: none;
+//   ${({ theme }) => theme.mediaWidth.upToSmall`
+//     display: initial;
+//   `};
+// `
+//
+// const DesktopWrapper = styled.div`
+//   display: initial;
+//   ${({ theme }) => theme.mediaWidth.upToSmall`
+//     display: none;
+//   `};
+// `
 
 const useStyles = makeStyles({
   list: {
@@ -100,6 +101,7 @@ function NavItem({
   internal,
   toggleDrawer,
 }: NavItemProps) {
+  const { t, i18n } = useTranslation()
   return (
     <>
       <div
@@ -112,19 +114,19 @@ function NavItem({
       >
         {internal ? (
           <List>
-            <SLink to={link}>
+            <SLocalizedLink to={link} language={i18n.language}>
               <ListItem button>
                 {icon && <ListItemIcon>{icon}</ListItemIcon>}
-                <ListItemText primary={text} />
+                <ListItemText primary={t(text)} />
               </ListItem>
-            </SLink>
+            </SLocalizedLink>
           </List>
         ) : (
           <List>
             <ExternalLink href={link} target="_blank" download>
               <ListItem button>
                 {icon && <ListItemIcon>{icon}</ListItemIcon>}
-                <ListItemText primary={text} />
+                <ListItemText primary={t(text)} />
               </ListItem>
             </ExternalLink>
           </List>
@@ -138,6 +140,7 @@ export function MobileNav() {
   const classes = useStyles()
   const [isOpen, setIsOpen] = React.useState<boolean>(false)
   const theme = useContext(ThemeContext)
+  const { t } = useTranslation()
 
   const toggleDrawer = (open: boolean) => (
     event: React.KeyboardEvent | React.MouseEvent
@@ -177,7 +180,7 @@ export function MobileNav() {
           <ExternalLink>
             <Pill background={theme.primary1}>
               <HeavyText fontSize="16" color={theme.white}>
-                Launch App
+                {t("Launch Dapp")}
               </HeavyText>
             </Pill>
           </ExternalLink>
@@ -191,21 +194,23 @@ export function MobileNav() {
 export function DesktopNav() {
   const [activeLabel, setActiveLabel] = useState<string>("")
   const theme = useContext(ThemeContext)
+  const { t, i18n } = useTranslation()
   return (
     // <DesktopWrapper>
     <div style={{ display: "flex" }}>
       {navItems.map((navItem, index) => (
-        <div key={index}>
+        <div key={index} style={{ display: "flex", alignItems: "center" }}>
           {navItem.internal ? (
-            <SLink
+            <SLocalizedLink
+              language={i18n.language}
               to={navItem.link}
               padding="0 1.5rem"
               fontSize="16px"
               onClick={() => setActiveLabel(navItem.label)}
               color={navItem.label === activeLabel ? theme.blue1 : theme.text1}
             >
-              {navItem.label}
-            </SLink>
+              {t(navItem.label)}
+            </SLocalizedLink>
           ) : (
             <ExternalLink
               href={navItem.link}
@@ -214,14 +219,27 @@ export function DesktopNav() {
               fontSize="16px"
               download
             >
-              {navItem.label}
+              {t(navItem.label)}
             </ExternalLink>
           )}
         </div>
       ))}
+      <div
+        style={{ display: "flex", alignItems: "center", padding: "0 1.5rem" }}
+      >
+        <SLink fontSize="16px" to={"/"}>
+          {t(`EN`)}
+        </SLink>
+        <Text fontSize="16px" padding="0 0.5rem">
+          |
+        </Text>
+        <SLink fontSize="16px" to={"/zh"}>
+          {t(`CN`)}
+        </SLink>
+      </div>
       <ExternalLink href="https://dapp.spanner.network" target="_blank">
-        <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.15rem">
-          Launch Dapp
+        <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.5rem">
+          {t("Launch Dapp")}
         </HeavyText>
       </ExternalLink>
     </div>

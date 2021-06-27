@@ -1,12 +1,13 @@
-import { ExternalLink, SLink } from "components/Link"
+import { ExternalLink, SLocalizedLink } from "components/Link"
 import * as React from "react"
 import { useContext } from "react"
+import { useTranslation } from "react-i18next"
 import styled, { ThemeContext } from "styled-components"
 import {
   ButtonLight,
   ButtonPrimary,
   ButtonSecondary,
-  ButtonTrans,
+  ButtonTrans
 } from "../components/Button"
 import { Card, CardIconGrid } from "../components/Card"
 import { Grid, GridBlock, ReverseGrid } from "../components/Grid"
@@ -20,7 +21,7 @@ import {
   HeavyText,
   LightText,
   Text,
-  ThinText,
+  ThinText
 } from "../components/Text"
 import TimelineBox from "../components/Timeline"
 import {
@@ -33,12 +34,14 @@ import {
   SectionDarkBg,
   SectionImageBg,
   SpacedSection,
-  Wrapper,
+  Wrapper
 } from "../components/Wrapper"
 import bulletTrainBg from "../images/banner-bullettrain-desktop.jpg"
 import joinCommunityBanner from "../images/banner-joincommunity.png"
 import dpoComparisonChart from "../images/dpo-comparison-chart.svg"
+import dpoComparisonChartZh from "../images/dpo-comparison-chart-zh.svg"
 import dpoComparison from "../images/dpo-comparison.svg"
+import dpoComparisonZh from "../images/dpo-comparison-zh.svg"
 import heroBanner from "../images/hero-banner-desktop.jpg"
 import heroMobileBanner from "../images/hero-banner-mobile.jpg"
 import arrowIcon from "../images/icon-arrow.svg"
@@ -61,6 +64,7 @@ import redditIcon from "../images/social-icon-reddit.svg"
 import telegramIcon from "../images/social-icon-telegram.svg"
 import twitterIcon from "../images/social-icon-twitter.svg"
 import techStack from "../images/spanner-tech-stack.svg"
+import techStackZh from "../images/spanner-tech-stack-zh.svg"
 
 const BannerContainer = styled.div`
   width: 100%;
@@ -130,6 +134,7 @@ const HeroButton2 = styled(ButtonTrans)`
 `
 
 function HeroBanner() {
+  const { t, i18n } = useTranslation()
   // const theme = useContext(ThemeContext)
   return (
     <>
@@ -138,21 +143,21 @@ function HeroBanner() {
           <ContentWrapper>
             <BannerTextContainer>
               <HeaderWrapper>
-                <Header1>The Blockchain for Borderless Collaboration</Header1>
+                <Header1>{t("herobanner header")}</Header1>
               </HeaderWrapper>
               <Text fontSize="24px" mobileFontSize="20px" fontWeight="300">
-                Making collaboration simple for everyone
+                {t("herobanner text")}
               </Text>
               <HeroButtonWrapper>
                 <ExternalLink
                   href="https://dapp.spanner.network"
                   target="_blank"
                 >
-                  <HeroButton1>Launch Dapp</HeroButton1>
+                  <HeroButton1>{t("Launch Dapp")}</HeroButton1>
                 </ExternalLink>
-                <SLink to="/docs/getting-started">
-                  <HeroButton2>Learn More</HeroButton2>
-                </SLink>
+                <SLocalizedLink to="/docs/getting-started" language={i18n.language}>
+                  <HeroButton2>{t("Learn More")}</HeroButton2>
+                </SLocalizedLink>
               </HeroButtonWrapper>
             </BannerTextContainer>
           </ContentWrapper>
@@ -163,18 +168,16 @@ function HeroBanner() {
 }
 
 function IntroducingDPO() {
+  const { t } = useTranslation()
   return (
     <>
       <ContentWrapper>
         <ContentSection>
           <CenterWrapper>
-            <Header2>Introducing DPO</Header2>
+            <Header2>{t(`Introducing DPO`)}</Header2>
             <Wrapper>
               <Text>
-                The Decentralized Programmable Organization (DPO) is a
-                technology to enable borderless collaboration on Blockchain. It
-                can be programmed with any structure and all interactions are
-                transparent and verifiable.
+                {t("dpo introduting text")}
               </Text>
             </Wrapper>
           </CenterWrapper>
@@ -185,38 +188,32 @@ function IntroducingDPO() {
               <ImageWrapper height="55px">
                 <img src={decentralizedIcon} style={{ width: "53px" }} />
               </ImageWrapper>
-              <Header4>Decentralized</Header4>
-              <Text fontSize="16px">Completely Borderless</Text>
+              <Header4>{t("Decentralized")}</Header4>
+              <Text fontSize="16px">{t("dpo decentralized sub title")}</Text>
               <LightText>
-                Work with anyone around the world. Collaborate with transparency
-                and trust. Measure contributions accurately and distribute
-                rewards fairly.
+                {t("dpo decentralized text")}
               </LightText>
             </GridBlock>
             <GridBlock>
               <ImageWrapper height="55px">
                 <img src={programmableIcon} style={{ width: "53px" }} />
               </ImageWrapper>
-              <Header4>Programmable</Header4>
+              <Header4>{t("Programmable")}</Header4>
               <Text fontSize="16px">
-                Do Anything, With Anyone, At Any Scale
+                {t("dpo programmable sub title")}
               </Text>
               <LightText>
-                Program any blockchain activity, membership structures and
-                composition to other DPOs.
+                {t("dpo programmable text")}
               </LightText>
             </GridBlock>
             <GridBlock>
               <ImageWrapper height="55px">
                 <img src={organizationIcon} style={{ width: "53px" }} />
               </ImageWrapper>
-              <Header4>Organization</Header4>
-              <Text fontSize="16px">Behave like a real organization</Text>
+              <Header4>{t("Organization")}</Header4>
+              <Text fontSize="16px">{t("dpo organization sub title")}</Text>
               <LightText>
-                DPO supports collaboration of any size, from two person
-                start-ups, to multinational corporations. DPOs can work
-                independently or collaborate with other DPOs via DPO
-                Composition.
+                {t("dpo organization text")}
               </LightText>
             </GridBlock>
           </Grid>
@@ -227,6 +224,9 @@ function IntroducingDPO() {
 }
 
 function DaoOrgComparison() {
+  const { t, i18n } = useTranslation()
+  const dpoComparisonChartImg = i18n.language == "zh" ? dpoComparisonChartZh : dpoComparisonChart
+  const dpoComparisonImg = i18n.language == "zh" ? dpoComparisonZh : dpoComparison
   return (
     <>
       <ContentWrapper>
@@ -234,18 +234,16 @@ function DaoOrgComparison() {
           <Grid columns="2" mobileColumns="1">
             <GridBlock maxWidth="635px" textAlign="left">
               <Header2>
-                Building on the best of DAOs and traditional organisations.
+                {t("DaoOrgComparison header")}
               </Header2>
               <LightText fontSize="16px">
-                Decentralization provides trust and transparency for open
-                participation. Operational Focus provides effectiveness and
-                efficiency for the goals of organizations.
+                {t("DaoOrgComparison text")}
               </LightText>
             </GridBlock>
             <GridBlock maxWidth="635px">
               <ImageWrapper maxWidth="620px">
                 <img
-                  src={dpoComparisonChart}
+                  src={dpoComparisonChartImg}
                   width={"100%"}
                   alt="Comparison of advantages for DPO with DAO and traditional companies"
                 />
@@ -254,20 +252,15 @@ function DaoOrgComparison() {
           </Grid>
           <ReverseGrid columns="2" mobileColumns="1">
             <GridBlock maxWidth="635px" textAlign="left">
-              <Header2>DAOs vs DPOs vs Traditional</Header2>
+              <Header2>{t("DAOs vs DPOs vs Traditional")}</Header2>
               <LightText fontSize="16px">
-                DPOs have the transparency and fairness of DAOs with the
-                operational efficiencies of Traditional Companies. Versatile
-                organization structures, flexible incentive programming towards
-                target goals, and guarenteed execution enables any user to
-                create decentralized organizations with the abilities of
-                multinational organizations.
+                {t("DAOs vs DPOs vs Traditional text")}
               </LightText>
             </GridBlock>
             <GridBlock maxWidth="635px">
               <ImageWrapper maxWidth="620px">
                 <img
-                  src={dpoComparison}
+                  src={dpoComparisonImg}
                   width={"100%"}
                   alt="Comparing DPO to DAO and Traditional Companies"
                 />
@@ -281,23 +274,24 @@ function DaoOrgComparison() {
 }
 
 function HowSpannerWorks() {
+  const { t, i18n } = useTranslation()
+  const techStackImg = i18n.language == "zh" ? techStackZh : techStack
   return (
     <>
       <SectionDarkBg>
         <ContentWrapper>
           <ContentSection>
             <CenterWrapper>
-              <Header2>How Spanner Works</Header2>
+              <Header2>{t("How Spanner Works")}</Header2>
               <Text>
-                Full-stack optimization for Economies of Scale and technical
-                Comparative Advantage.
+                {t("Full-stack optimization for Economies of Scale and technical Comparative Advantage.")}
               </Text>
-              <Header4>All powered by BOLT</Header4>
+              <Header4>{t("All powered by BOLT")}</Header4>
             </CenterWrapper>
             <CenterWrapper>
               <ImageWrapper maxWidth="800px">
                 <img
-                  src={techStack}
+                  src={techStackImg}
                   width={"100%"}
                   alt="Spanner's technology stack powered by the BOLT token."
                 />
@@ -310,16 +304,16 @@ function HowSpannerWorks() {
                   target="_blank"
                 >
                   <ButtonPrimary fontSize="20px" padding="0.8rem">
-                    Get BOLT
+                    {t("Get BOLT")}
                   </ButtonPrimary>
                 </ExternalLink>
               </div>
               <div style={{ margin: "0 1rem", padding: "1rem" }}>
-                <SLink to="/docs/architecture" target="_blank">
+                <SLocalizedLink to="/docs/architecture" target="_blank">
                   <ButtonSecondary fontSize="20px" padding="0.8rem">
-                    About Spanner
+                    {t("About Spanner")}
                   </ButtonSecondary>
-                </SLink>
+                </SLocalizedLink>
               </div>
             </CenterWrapper>
           </ContentSection>
@@ -331,6 +325,7 @@ function HowSpannerWorks() {
 
 function BulletTrain() {
   const theme = useContext(ThemeContext)
+  const { t, i18n } = useTranslation()
   return (
     <SectionDarkBg backgroundColor={theme.bg5}>
       <CenterWrapper>
@@ -340,7 +335,7 @@ function BulletTrain() {
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "center"
           }}
         >
           <ContentWrapper>
@@ -352,28 +347,26 @@ function BulletTrain() {
                 <GridBlock maxWidth="536px" textAlign="left" mobileAlign="left">
                   <SpacedSection>
                     <BigText color="#fff">
-                      Grow with Spanner BulletTrain
+                      {t("Grow with Spanner BulletTrain")}
                     </BigText>
                   </SpacedSection>
                   <SpacedSection>
                     <ThinText color="#fff" style={{ padding: "1rem 0" }}>
-                      <b>DPO for Growth in action.</b> Grow the community for
-                      your hot crypto project with BulletTrain. Start a
-                      BulletTrain on Spanner Blockchain to empower your
-                      community to grow itself through affiliate crowdfunding
-                      incentives.
+                      <b>{t("DPO for Growth in action.")}</b>
+                      {t("Grow the community for your hot crypto project with BulletTrain. Start a BulletTrain on Spanner Blockchain to empower your community to grow itself through affiliate crowdfunding incentives.")}
+
                     </ThinText>
                   </SpacedSection>
-                  <SLink to="/docs/bullettrain">
+                  <SLocalizedLink to="/docs/bullettrain" language={i18n.language}>
                     <ButtonLight
                       fontSize="20px"
                       height="56px"
                       width="243px"
                       marginRight="20px"
                     >
-                      Earn More BOLT
+                      {t("Earn More BOLT")}
                     </ButtonLight>
-                  </SLink>
+                  </SLocalizedLink>
                 </GridBlock>
               </Grid>
             </ContentSection>
@@ -386,26 +379,28 @@ function BulletTrain() {
 
 function AudienceLearnMore() {
   const theme = useContext(ThemeContext)
+  const { t } = useTranslation()
 
   const cardData = [
     {
       header: "Builders",
       image: builderIcon,
       text: "Build your project on Spanner. No code required.",
-      link: "/docs/build-on-spanner",
+      link: "/docs/build-on-spanner"
     },
     {
       header: "Users",
       image: userIcon,
       text: "Check out our decentralized application, Spanner Dapp.",
-      link: "/docs/spanner-dapp",
+      link: "/docs/spanner-dapp"
     },
     {
       header: "Enthusiasts",
       image: blockchainIcon,
       text: `Curious about Spanner's Blockchain? Read more about our blockchain parameters.`,
-      link: "/docs/parameters",
-    },
+      link: "/docs/parameters"
+    }
+
   ]
   return (
     <>
@@ -413,20 +408,14 @@ function AudienceLearnMore() {
         <ContentWrapper>
           <ContentSection>
             <Grid columns="2" mobileColumns="1">
-              <GridBlock maxWidth="670px" textAlign="left">
+              <GridBlock display="flex" maxWidth="670px" textAlign="left" alignItems="center">
                 <Header2 color={theme.white}>
-                  Whether you are a Project Owner, User or just curious, there’s
-                  plenty of resources for you to learn more about Spanner.
+                  {t("Whether you are a Project Owner, User or just curious, there’s plenty of resources for you to learn more about Spanner.")}
                 </Header2>
-                <Text color={theme.bg2}>
-                  Decentralization provides trust and transparency for open
-                  participation. Operational Focus provides effectiveness and
-                  efficiency for the goals of organizations.
-                </Text>
               </GridBlock>
               <GridBlock maxWidth="670px" textAlign="left">
                 {cardData.map((data, index) => (
-                  <SLink key={index} to={data.link}>
+                  <SLocalizedLink key={index} to={data.link}>
                     <CardIconGrid maxWidth="575px">
                       <CenterWrapper style={{ display: "flex" }}>
                         <img src={data.image} style={{ width: "40px" }} />
@@ -436,16 +425,16 @@ function AudienceLearnMore() {
                       >
                         <div style={{ display: "block", textAlign: "left" }}>
                           <HeavyText fontSize="20px" padding="0.35rem 0">
-                            {data.header.toUpperCase()}
+                            {t(data.header).toUpperCase()}
                           </HeavyText>
-                          <LightText padding="0.35rem 0">{data.text}</LightText>
+                          <LightText padding="0.35rem 0">{t(data.text)}</LightText>
                         </div>
                       </CenterWrapper>
                       <CenterWrapper style={{ display: "flex" }}>
                         <img src={arrowIcon} style={{ width: "27px" }} />
                       </CenterWrapper>
                     </CardIconGrid>
-                  </SLink>
+                  </SLocalizedLink>
                 ))}
               </GridBlock>
             </Grid>
@@ -465,13 +454,14 @@ function OurPartners() {
     polkadotIcon,
     imtokenIcon,
     rococoIcon,
-    walletConnectIcon,
+    walletConnectIcon
   ]
+  const { t } = useTranslation()
   return (
     <ContentWrapper>
       <ContentSection>
         <CenterWrapper>
-          <Header2>Our Partner Candidates</Header2>
+          <Header2>{t("Our Partner Candidates")}</Header2>
           <Grid columns="4" mobileColumns="1">
             {partnerLogos.map((logoFile, index) => (
               <GridBlock key={index}>
@@ -493,54 +483,55 @@ function OurPartners() {
 
 function OurCommunity() {
   const theme = useContext(ThemeContext)
+  const { t, i18n } = useTranslation()
   const cardData = [
     {
       header: `Hodlers`,
       text: `Get up to date information at our Telegram Announcement Channel.`,
       cta: "Join Telegram",
-      link: "https://t.me/spannerupdates",
+      link: "https://t.me/spannerupdates"
     },
     {
       header: "Ecosystem Partners",
-      text: `Collaborate with our team to integrate Spanner with your project`,
-      cta: `Find out more`,
-      link: "/docs/integration-guide/",
+      text: "Collaborate with our team to integrate Spanner with your project",
+      cta: "Find out more",
+      link: "/docs/integration-guide/"
     },
     {
       header: `Ambassadors`,
       text: `Join our Ambassador Program and help grow our community!`,
       cta: `Become Ambassadors`,
-      link: "mailto:ask@spanner.network",
-    },
+      link: "mailto:ask@spanner.network"
+    }
   ]
   const socialLinks = [
     {
       name: "telegram",
       icon: telegramIcon,
-      link: "https://t.me/spannerprotocol",
+      link: "https://t.me/spannerprotocol"
     },
     {
       name: "twitter",
       icon: twitterIcon,
-      link: "https://twitter.com/ProtocolSpanner",
+      link: "https://twitter.com/ProtocolSpanner"
     },
     {
       name: "reddit",
       icon: redditIcon,
-      link: "#",
+      link: "#"
     },
     {
       name: "facebook",
       icon: facebookIcon,
-      link: "#",
-    },
+      link: "#"
+    }
   ]
   return (
     <>
       <ContentWrapper>
         <ContentSection>
           <CenterWrapper>
-            <Header2>Our Community</Header2>
+            <Header2>{t("Our Community")}</Header2>
           </CenterWrapper>
           <FlexWrapper>
             {cardData.map((data, index) => (
@@ -550,10 +541,10 @@ function OurCommunity() {
                   padding="1rem 0"
                   color={theme.primary1}
                 >
-                  {data.header.toUpperCase()}
+                  {t(data.header).toUpperCase()}
                 </HeavyText>
                 <LightText fontSize="16px" padding="1rem 0">
-                  {data.text}
+                  {t(data.text)}
                 </LightText>
                 {data.link.includes("https://") ||
                 data.link.includes("mailto:") ? (
@@ -565,13 +556,13 @@ function OurCommunity() {
                         padding="1rem 0"
                         style={{ paddingRight: "1rem" }}
                       >
-                        {data.cta}
+                        {t(data.cta)}
                       </HeavyText>
                       <img src={arrowIcon} style={{ width: "27px" }} />
                     </FlexWrapper>
                   </ExternalLink>
                 ) : (
-                  <SLink to={data.link}>
+                  <SLocalizedLink to={data.link} language={i18n.language}>
                     <FlexWrapper justifyContent="flex-start">
                       <HeavyText
                         fontSize="16px"
@@ -579,11 +570,11 @@ function OurCommunity() {
                         padding="1rem 0"
                         style={{ paddingRight: "1rem" }}
                       >
-                        {data.cta}
+                        {t(data.cta)}
                       </HeavyText>
                       <img src={arrowIcon} style={{ width: "27px" }} />
                     </FlexWrapper>
-                  </SLink>
+                  </SLocalizedLink>
                 )}
               </Card>
             ))}
@@ -599,10 +590,10 @@ function OurCommunity() {
           >
             <CenterWrapper>
               <Header2 color="#fff">
-                Interested in being a part of the borderless future?
+                {t("Interested in being a part of the borderless future?")}
               </Header2>
               <HeavyText color="#fff" fontSize="20px">
-                Join our community today.
+                {t("Join our community today.")}
               </HeavyText>
               <SpacedSection>
                 {socialLinks.map((social, index) => (
@@ -631,10 +622,10 @@ const timelineData = [
       "Hammer Testnet development",
       "DPO Research and Architecture",
       "Dex and Bridge development",
-      "BulletTrain Development",
+      "BulletTrain Development"
     ],
     date: "2020",
-    finished: true,
+    finished: true
   },
   {
     headline: "Minimum Viable Products",
@@ -643,10 +634,10 @@ const timelineData = [
       "DPO V1 Development",
       "Dex and Bridge Launch on Hammer",
       "Partnership Development",
-      "BulletTrain Released on Hammer",
+      "BulletTrain Released on Hammer"
     ],
     date: "2021 Q1",
-    finished: true,
+    finished: true
   },
   {
     headline: "Official Launch",
@@ -654,10 +645,10 @@ const timelineData = [
       "Spanner Mainnet launch",
       "DPO Smart Contract Research",
       "BulletTrain Launch (Spanner BOLT)",
-      "Rococo Parachain Research",
+      "Rococo Parachain Research"
     ],
     date: "2021 Q2",
-    finished: false,
+    finished: false
   },
   {
     headline: "DPO Enhancement",
@@ -666,10 +657,10 @@ const timelineData = [
       "DPO V2 Research",
       "DPO Off-chain Oracle Research",
       "BulletTrain open for all Projects",
-      "Growth Marketplace",
+      "Growth Marketplace"
     ],
     date: "2021 Q3",
-    finished: false,
+    finished: false
   },
   {
     headline: "Parter Integrations",
@@ -677,20 +668,21 @@ const timelineData = [
       "Parachain Interoperability",
       "DPO Full Smart Contract Support",
       "DPO Off-chain Oracle Support",
-      "More DPO applications",
+      "More DPO applications"
     ],
     date: "2021 Q4",
-    finished: false,
-  },
+    finished: false
+  }
 ]
 
 function RoadMap() {
+  const { t } = useTranslation()
   return (
     <ContentWrapper>
       <ContentSection paddingTop="3rem" paddingBottom="3rem">
         <CenterWrapper>
           <div style={{ overflow: "hidden" }}>
-            <Header2>Our Project Roadmap</Header2>
+            <Header2>{t("Our Project Roadmap")}</Header2>
             {timelineData.map((target, index) => (
               <TimelineBox key={index} {...target} />
             ))}

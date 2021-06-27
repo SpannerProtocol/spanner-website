@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="665" height="399" viewBox="0 0 665 399">
+  <defs>
+    <filter id="Rectangle_44" x="0" y="0" width="665" height="399" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Graph_1" transform="translate(22.5 14.5)">
+    <g transform="matrix(1, 0, 0, 1, -22.5, -14.5)" filter="url(#Rectangle_44)">
+      <rect id="Rectangle_44-2" data-name="Rectangle 44" width="620" height="354" rx="20" transform="translate(22.5 14.5)" fill="#fff"/>
+    </g>
+    <line id="Line_8" data-name="Line 8" y2="216.723" transform="translate(121.888 61.201)" fill="none" stroke="#262a41" stroke-width="1"/>
+    <line id="Line_9" data-name="Line 9" x2="363.577" transform="translate(122.211 277.924)" fill="none" stroke="#262a41" stroke-width="1"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="9" cy="9" r="9" transform="translate(190 85)" fill="#ec601f"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="9" cy="9" r="9" transform="translate(393 76)" fill="#ffa521"/>
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="9" cy="9" r="9" transform="translate(425 224)" fill="#ffcf35"/>
+    <line id="Line_10" data-name="Line 10" y2="216.723" transform="translate(304 61.201)" fill="none" stroke="#2b2f4a" stroke-width="1" stroke-dasharray="5"/>
+    <line id="Line_11" data-name="Line 11" x2="363.577" transform="translate(121.888 169.562)" fill="none" stroke="#2b2f4a" stroke-width="1" stroke-dasharray="5"/>
+    <text id="DPO" transform="translate(429 67)" fill="#262a41" font-size="16" font-family="Helvetica" letter-spacing="0.01em"><tspan x="-17.496" y="0">DPO</tspan></text>
+    <text id="DAO" transform="translate(226 76)" fill="#262a41" font-size="16" font-family="Helvetica" letter-spacing="0.01em"><tspan x="-17.496" y="0">DAO</tspan></text>
+    <text id="传统的" transform="translate(470 211)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-24.16" y="0">传统的</tspan></text>
+    <text id="业务重点" transform="translate(304 308)" fill="#262a41" font-size="14" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-28.21" y="0">业务重点</tspan></text>
+    <text id="去中心化" transform="translate(99 170) rotate(-90)" fill="#262a41" font-size="14" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-28.21" y="0">去中心化</tspan></text>
+    <text id="高" transform="translate(122 54)" fill="#9299a0" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-6" y="0">高</tspan></text>
+    <text id="低" transform="translate(120 299)" fill="#9299a0" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-6" y="0">低</tspan></text>
+    <text id="高-2" data-name="高" transform="translate(483 300)" fill="#9299a0" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.01em"><tspan x="-6" y="0">高</tspan></text>
+  </g>
+</svg>
