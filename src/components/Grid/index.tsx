@@ -28,9 +28,16 @@ export const ReverseGrid = styled(Grid)`
   `};
 `
 
-export const GridBlock = styled.div<{ maxWidth?: string; textAlign?: string, mobileAlign?: string }>`
-  display: block;
+export const GridBlock = styled.div<{
+  display?: string
+  maxWidth?: string
+  textAlign?: string
+  alignItems?: string
+  mobileAlign?: string
+}>`
+  display: ${({ display }) => (display ? display : "block")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+  align-items: ${({ alignItems }) => (alignItems ? alignItems : "initial")};
   margin: 0 auto;
   padding: 0.5rem 0;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "300px")};
