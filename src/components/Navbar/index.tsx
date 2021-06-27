@@ -15,9 +15,9 @@ import React, { useContext, useState } from "react"
 import { useMedia } from "react-use"
 import hamburgerIcon from "../../images/icon-hamburger-gradient.svg"
 import styled, { ThemeContext } from "styled-components"
-import { ExternalLink, SLocalizedLink } from "../Link"
+import { ExternalLink, SLocalizedLink, SLink } from "../Link"
 import { Pill } from "../Pill"
-import { HeavyText } from "../Text"
+import { Text, HeavyText } from "../Text"
 import { CenterWrapper } from "../Wrapper"
 import SpannerDeck from "../../assets/spanner-deck-v1.31.pdf"
 import { useTranslation } from "react-i18next"
@@ -101,7 +101,7 @@ function NavItem({
   internal,
   toggleDrawer,
 }: NavItemProps) {
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <>
       <div
@@ -180,7 +180,7 @@ export function MobileNav() {
           <ExternalLink>
             <Pill background={theme.primary1}>
               <HeavyText fontSize="16" color={theme.white}>
-                {t('Launch Dapp')}
+                {t("Launch Dapp")}
               </HeavyText>
             </Pill>
           </ExternalLink>
@@ -194,12 +194,12 @@ export function MobileNav() {
 export function DesktopNav() {
   const [activeLabel, setActiveLabel] = useState<string>("")
   const theme = useContext(ThemeContext)
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     // <DesktopWrapper>
     <div style={{ display: "flex" }}>
       {navItems.map((navItem, index) => (
-        <div key={index}>
+        <div key={index} style={{ display: "flex", alignItems: "center" }}>
           {navItem.internal ? (
             <SLocalizedLink
               language={i18n.language}
@@ -224,9 +224,22 @@ export function DesktopNav() {
           )}
         </div>
       ))}
+      <div
+        style={{ display: "flex", alignItems: "center", padding: "0 1.5rem" }}
+      >
+        <SLink fontSize="16px" to={"/"}>
+          {t(`EN`)}
+        </SLink>
+        <Text fontSize="16px" padding="0 0.5rem">
+          |
+        </Text>
+        <SLink fontSize="16px" to={"/zh"}>
+          {t(`CN`)}
+        </SLink>
+      </div>
       <ExternalLink href="https://dapp.spanner.network" target="_blank">
-        <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.15rem">
-          {t('Launch Dapp')}
+        <HeavyText fontSize="16px" color={theme.primary1} padding="0 1.5rem">
+          {t("Launch Dapp")}
         </HeavyText>
       </ExternalLink>
     </div>
