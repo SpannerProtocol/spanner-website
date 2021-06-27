@@ -39,7 +39,9 @@ import {
 import bulletTrainBg from "../images/banner-bullettrain-desktop.jpg"
 import joinCommunityBanner from "../images/banner-joincommunity.png"
 import dpoComparisonChart from "../images/dpo-comparison-chart.svg"
+import dpoComparisonChartZh from "../images/dpo-comparison-chart-zh.svg"
 import dpoComparison from "../images/dpo-comparison.svg"
+import dpoComparisonZh from "../images/dpo-comparison-zh.svg"
 import heroBanner from "../images/hero-banner-desktop.jpg"
 import heroMobileBanner from "../images/hero-banner-mobile.jpg"
 import arrowIcon from "../images/icon-arrow.svg"
@@ -62,6 +64,7 @@ import redditIcon from "../images/social-icon-reddit.svg"
 import telegramIcon from "../images/social-icon-telegram.svg"
 import twitterIcon from "../images/social-icon-twitter.svg"
 import techStack from "../images/spanner-tech-stack.svg"
+import techStackZh from "../images/spanner-tech-stack-zh.svg"
 
 const BannerContainer = styled.div`
   width: 100%;
@@ -131,7 +134,7 @@ const HeroButton2 = styled(ButtonTrans)`
 `
 
 function HeroBanner() {
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   // const theme = useContext(ThemeContext)
   return (
     <>
@@ -221,7 +224,9 @@ function IntroducingDPO() {
 }
 
 function DaoOrgComparison() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const dpoComparisonChartImg = i18n.language == "zh" ? dpoComparisonChartZh : dpoComparisonChart
+  const dpoComparisonImg = i18n.language == "zh" ? dpoComparisonZh : dpoComparison
   return (
     <>
       <ContentWrapper>
@@ -238,7 +243,7 @@ function DaoOrgComparison() {
             <GridBlock maxWidth="635px">
               <ImageWrapper maxWidth="620px">
                 <img
-                  src={dpoComparisonChart}
+                  src={dpoComparisonChartImg}
                   width={"100%"}
                   alt="Comparison of advantages for DPO with DAO and traditional companies"
                 />
@@ -255,7 +260,7 @@ function DaoOrgComparison() {
             <GridBlock maxWidth="635px">
               <ImageWrapper maxWidth="620px">
                 <img
-                  src={dpoComparison}
+                  src={dpoComparisonImg}
                   width={"100%"}
                   alt="Comparing DPO to DAO and Traditional Companies"
                 />
@@ -269,7 +274,8 @@ function DaoOrgComparison() {
 }
 
 function HowSpannerWorks() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const techStackImg = i18n.language == "zh" ? techStackZh : techStack
   return (
     <>
       <SectionDarkBg>
@@ -285,7 +291,7 @@ function HowSpannerWorks() {
             <CenterWrapper>
               <ImageWrapper maxWidth="800px">
                 <img
-                  src={techStack}
+                  src={techStackImg}
                   width={"100%"}
                   alt="Spanner's technology stack powered by the BOLT token."
                 />
@@ -319,7 +325,7 @@ function HowSpannerWorks() {
 
 function BulletTrain() {
   const theme = useContext(ThemeContext)
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <SectionDarkBg backgroundColor={theme.bg5}>
       <CenterWrapper>
@@ -404,11 +410,11 @@ function AudienceLearnMore() {
             <Grid columns="2" mobileColumns="1">
               <GridBlock maxWidth="670px" textAlign="left">
                 <Header2 color={theme.white}>
-                  {t('Whether you are a Project Owner, User or just curious, there’s plenty of resources for you to learn more about Spanner.')}
+                  {t("Whether you are a Project Owner, User or just curious, there’s plenty of resources for you to learn more about Spanner.")}
                 </Header2>
-                <Text color={theme.bg2}>
-                  {t('Decentralization provides trust and transparency for open participation. Operational Focus provides effectiveness and efficiency for the goals of organizations.')}
-                </Text>
+                {/*<Text color={theme.bg2}>*/}
+                {/*  {t('Decentralization provides trust and transparency for open participation. Operational Focus provides effectiveness and efficiency for the goals of organizations.')}*/}
+                {/*</Text>*/}
               </GridBlock>
               <GridBlock maxWidth="670px" textAlign="left">
                 {cardData.map((data, index) => (
@@ -458,7 +464,7 @@ function OurPartners() {
     <ContentWrapper>
       <ContentSection>
         <CenterWrapper>
-          <Header2>{t('Our Partner Candidates')}</Header2>
+          <Header2>{t("Our Partner Candidates")}</Header2>
           <Grid columns="4" mobileColumns="1">
             {partnerLogos.map((logoFile, index) => (
               <GridBlock key={index}>
@@ -480,26 +486,26 @@ function OurPartners() {
 
 function OurCommunity() {
   const theme = useContext(ThemeContext)
-  const { t,i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const cardData = [
     {
       header: `Hodlers`,
       text: `Get up to date information at our Telegram Announcement Channel.`,
       cta: "Join Telegram",
-      link: "https://t.me/spannerupdates",
+      link: "https://t.me/spannerupdates"
     },
     {
       header: "Ecosystem Partners",
-      text: 'Collaborate with our team to integrate Spanner with your project',
-      cta: 'Find out more',
-      link: "/docs/integration-guide/",
+      text: "Collaborate with our team to integrate Spanner with your project",
+      cta: "Find out more",
+      link: "/docs/integration-guide/"
     },
     {
       header: `Ambassadors`,
       text: `Join our Ambassador Program and help grow our community!`,
       cta: `Become Ambassadors`,
-      link: "mailto:ask@spanner.network",
-    },
+      link: "mailto:ask@spanner.network"
+    }
   ]
   const socialLinks = [
     {
@@ -528,7 +534,7 @@ function OurCommunity() {
       <ContentWrapper>
         <ContentSection>
           <CenterWrapper>
-            <Header2>{t('Our Community')}</Header2>
+            <Header2>{t("Our Community")}</Header2>
           </CenterWrapper>
           <FlexWrapper>
             {cardData.map((data, index) => (
@@ -587,10 +593,10 @@ function OurCommunity() {
           >
             <CenterWrapper>
               <Header2 color="#fff">
-                {t('Interested in being a part of the borderless future?')}
+                {t("Interested in being a part of the borderless future?")}
               </Header2>
               <HeavyText color="#fff" fontSize="20px">
-                {t('Join our community today.')}
+                {t("Join our community today.")}
               </HeavyText>
               <SpacedSection>
                 {socialLinks.map((social, index) => (
@@ -619,10 +625,10 @@ const timelineData = [
       "Hammer Testnet development",
       "DPO Research and Architecture",
       "Dex and Bridge development",
-      "BulletTrain Development",
+      "BulletTrain Development"
     ],
     date: "2020",
-    finished: true,
+    finished: true
   },
   {
     headline: "Minimum Viable Products",
@@ -631,10 +637,10 @@ const timelineData = [
       "DPO V1 Development",
       "Dex and Bridge Launch on Hammer",
       "Partnership Development",
-      "BulletTrain Released on Hammer",
+      "BulletTrain Released on Hammer"
     ],
     date: "2021 Q1",
-    finished: true,
+    finished: true
   },
   {
     headline: "Official Launch",
@@ -642,10 +648,10 @@ const timelineData = [
       "Spanner Mainnet launch",
       "DPO Smart Contract Research",
       "BulletTrain Launch (Spanner BOLT)",
-      "Rococo Parachain Research",
+      "Rococo Parachain Research"
     ],
     date: "2021 Q2",
-    finished: false,
+    finished: false
   },
   {
     headline: "DPO Enhancement",
@@ -654,10 +660,10 @@ const timelineData = [
       "DPO V2 Research",
       "DPO Off-chain Oracle Research",
       "BulletTrain open for all Projects",
-      "Growth Marketplace",
+      "Growth Marketplace"
     ],
     date: "2021 Q3",
-    finished: false,
+    finished: false
   },
   {
     headline: "Parter Integrations",
@@ -665,11 +671,11 @@ const timelineData = [
       "Parachain Interoperability",
       "DPO Full Smart Contract Support",
       "DPO Off-chain Oracle Support",
-      "More DPO applications",
+      "More DPO applications"
     ],
     date: "2021 Q4",
-    finished: false,
-  },
+    finished: false
+  }
 ]
 
 function RoadMap() {

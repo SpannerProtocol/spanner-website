@@ -1,0 +1,441 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1023" height="606" viewBox="0 0 1023 606">
+  <defs>
+    <filter id="Rectangle_80" x="0" y="1.5" width="1023" height="134" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_86" x="0" y="110.5" width="1023" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_94" x="0" y="271.5" width="523" height="165" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_96" x="0" y="411.5" width="1023" height="192" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-4"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_102" data-name="Rectangle 102" width="51" height="51" transform="translate(831 3261)" fill="none"/>
+    </clipPath>
+    <filter id="Rectangle_103" x="500" y="271.5" width="523" height="165" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-5"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_387" data-name="Group 387" transform="translate(-448.5 -2676)">
+    <g transform="matrix(1, 0, 0, 1, 448.5, 2676)" filter="url(#Rectangle_80)">
+      <rect id="Rectangle_80-2" data-name="Rectangle 80" width="978" height="89" rx="15" transform="translate(22.5 16)" fill="#fff"/>
+    </g>
+    <text id="DPO_可编程接口" data-name="DPO 可编程接口" transform="translate(501 2742)" fill="#2b2f4a" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">DPO </tspan><tspan y="0" font-family="PingFangHK-Semibold, PingFang HK" font-weight="600">可编程接口</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 448.5, 2676)" filter="url(#Rectangle_86)">
+      <rect id="Rectangle_86-2" data-name="Rectangle 86" width="978" height="141" rx="15" transform="translate(22.5 125)" fill="#fff"/>
+    </g>
+    <text id="SPANNER_应用程序代码" data-name="SPANNER 应用程序代码" transform="translate(501 2877)" fill="#2b2f4a" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">SPANNER </tspan><tspan y="0" font-family="PingFangHK-Semibold, PingFang HK" font-weight="600">应用程序代码</tspan></text>
+    <g id="Component_39_28" data-name="Component 39 – 28" transform="translate(839 2715)">
+      <rect id="Rectangle_93" data-name="Rectangle 93" width="90" height="40" rx="5" fill="#fff8ef"/>
+      <text id="费用" transform="translate(0 10)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="28.84" y="17">费用</tspan></text>
+    </g>
+    <g id="Component_39_29" data-name="Component 39 – 29" transform="translate(949 2715)">
+      <rect id="Rectangle_93-2" data-name="Rectangle 93" width="108" height="40" rx="5" fill="#fff8ef"/>
+      <text id="奖励" transform="translate(0 10)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="37.84" y="17">奖励</tspan></text>
+    </g>
+    <g id="Component_39_30" data-name="Component 39 – 30" transform="translate(1077 2715)">
+      <rect id="Rectangle_93-3" data-name="Rectangle 93" width="90" height="40" rx="5" fill="#fff8ef"/>
+      <text id="角色" transform="translate(0 10)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="28.84" y="17">角色</tspan></text>
+    </g>
+    <g id="Component_39_31" data-name="Component 39 – 31" transform="translate(1187 2715)">
+      <rect id="Rectangle_93-4" data-name="Rectangle 93" width="90" height="40" rx="5" fill="#fff8ef"/>
+      <text id="目标" transform="translate(0 10)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="28.84" y="17">目标</tspan></text>
+    </g>
+    <g id="Component_39_32" data-name="Component 39 – 32" transform="translate(1297 2715)">
+      <rect id="Rectangle_93-5" data-name="Rectangle 93" width="115" height="40" rx="5" fill="#fff8ef"/>
+      <text id="结构" transform="translate(0 10)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="41.34" y="17">结构</tspan></text>
+    </g>
+    <g id="DPO_icon" transform="translate(861.78 2826.65)">
+      <g id="Group_101" data-name="Group 101" transform="translate(-1437.248 -975.133)">
+        <g id="Group_57" data-name="Group 57" transform="translate(1454.764 975.133)">
+          <path id="Path_55" data-name="Path 55" d="M5.4,0A5.4,5.4,0,1,1,0,5.4,5.4,5.4,0,0,1,5.4,0Z" transform="translate(3.352 0)" fill="none" stroke="#ffa521" stroke-width="2"/>
+          <path id="Path_56" data-name="Path 56" d="M3208.916,798.017a7.936,7.936,0,0,1,2.444-6.608c1.072-.967,3.121-1.814,6.32-1.78,10,.105,8.647,8.388,8.647,8.388" transform="translate(-3208.873 -778.219)" fill="none" stroke="#ffa521" stroke-linecap="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_102" data-name="Group 102" transform="translate(-1454.764 -944.133)">
+        <g id="Group_57-2" data-name="Group 57" transform="translate(1454.764 975.133)">
+          <path id="Path_55-2" data-name="Path 55" d="M5.4,0A5.4,5.4,0,1,1,0,5.4,5.4,5.4,0,0,1,5.4,0Z" transform="translate(3.352 0)" fill="none" stroke="#ffa521" stroke-width="2"/>
+          <path id="Path_56-2" data-name="Path 56" d="M3208.916,798.017a7.936,7.936,0,0,1,2.444-6.608c1.072-.967,3.121-1.814,6.32-1.78,10,.105,8.647,8.388,8.647,8.388" transform="translate(-3208.873 -778.219)" fill="none" stroke="#ffa521" stroke-linecap="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_103" data-name="Group 103" transform="translate(-1419.733 -944.133)">
+        <g id="Group_57-3" data-name="Group 57" transform="translate(1454.764 975.133)">
+          <path id="Path_55-3" data-name="Path 55" d="M5.4,0A5.4,5.4,0,1,1,0,5.4,5.4,5.4,0,0,1,5.4,0Z" transform="translate(3.352 0)" fill="none" stroke="#ffa521" stroke-width="2"/>
+          <path id="Path_56-3" data-name="Path 56" d="M3208.916,798.017a7.936,7.936,0,0,1,2.444-6.608c1.072-.967,3.121-1.814,6.32-1.78,10,.105,8.647,8.388,8.647,8.388" transform="translate(-3208.873 -778.219)" fill="none" stroke="#ffa521" stroke-linecap="round" stroke-width="2"/>
+        </g>
+      </g>
+      <path id="Path_96" data-name="Path 96" d="M5172.868,1010.013a9.264,9.264,0,0,1,5.351-8.593" transform="translate(-5166.781 -985.918)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_99" data-name="Path 99" d="M5178.21,1010.013a9.264,9.264,0,0,0-5.351-8.593" transform="translate(-5131.751 -985.918)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_100" data-name="Path 100" d="M5178.21,1010.013a9.264,9.264,0,0,0-5.351-8.593" transform="translate(3485.019 -3938.391) rotate(120)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+      <circle id="Ellipse_28" data-name="Ellipse 28" cx="3" cy="3" r="3" transform="translate(23 24.899)" fill="#262a41"/>
+    </g>
+    <text id="DPO" transform="translate(888.053 2912.35)" fill="#262a41" font-size="16" font-family="Helvetica" letter-spacing="0.02em"><tspan x="-17.656" y="0">DPO</tspan></text>
+    <g id="Goal_icon" transform="translate(990.78 2826.65)">
+      <g id="Ellipse_29" data-name="Ellipse 29" fill="#fff" stroke="#262a41" stroke-width="2">
+        <circle cx="25.5" cy="25.5" r="25.5" stroke="none"/>
+        <circle cx="25.5" cy="25.5" r="24.5" fill="none"/>
+      </g>
+      <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(8 8)" fill="#fff" stroke="#ffa521" stroke-width="2">
+        <circle cx="17.5" cy="17.5" r="17.5" stroke="none"/>
+        <circle cx="17.5" cy="17.5" r="16.5" fill="none"/>
+      </g>
+      <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(17 17)" fill="#fff" stroke="#ffa521" stroke-width="2">
+        <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+        <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+      </g>
+      <g id="Path_102" data-name="Path 102" transform="translate(51 10.959) rotate(137)" fill="#fff">
+        <path d="M 14.00000381469727 12 L 2.000004053115845 12 C 1.558318734169006 12 1.182597279548645 11.71216773986816 1.050564646720886 11.31421852111816 L 4.572664260864258 7.244569778442383 L 5.127804279327393 6.603119850158691 L 4.585453987121582 5.950829982757568 L 1.047377586364746 1.695556163787842 C 1.17646861076355 1.292563915252686 1.554717659950256 1 2.000004053115845 1 L 14.00000381469727 1 C 14.25874996185303 1 14.39455318450928 1.053348660469055 14.44263076782227 1.084676027297974 L 14.46716403961182 1.127300024032593 C 15.77134132385254 3.393312692642212 17.22948837280273 5.959726333618164 17.44587516784668 6.39677095413208 L 14.68948841094971 11.76400947570801 C 14.62486457824707 11.83147048950195 14.42123126983643 12 14.00000381469727 12 Z" stroke="none"/>
+        <path d="M 2.601015090942383 2 L 5.354384422302246 5.311500072479248 L 6.439094543457031 6.616079807281494 L 5.328804016113281 7.898970127105713 L 2.645000457763672 11 L 13.95768737792969 11 L 16.31653594970703 6.406857013702393 C 15.84675884246826 5.554192543029785 14.8106803894043 3.732002258300781 13.81545639038086 2 L 2.601015090942383 2 M 2.000003814697266 0 L 14.00000381469727 0 C 15.10457420349121 0 15.33386421203613 0.6284799575805664 15.33386421203613 0.6284799575805664 C 15.33386421203613 0.6284799575805664 18.2100944519043 5.625919818878174 18.37983322143555 6.033659934997559 C 18.54956436157227 6.441410064697266 18.39221382141113 6.743030071258545 18.39221382141113 6.743030071258545 L 15.53761386871338 12.30150032043457 C 15.53761386871338 12.30150032043457 15.10457420349121 13 14.00000381469727 13 L 2.000003814697266 13 C 0.8954334259033203 13 3.814697265625e-06 12.10457038879395 3.814697265625e-06 11 L 3.816524505615234 6.590159893035889 L 3.814697265625e-06 2 C 3.814697265625e-06 0.8954296112060547 0.8954334259033203 0 2.000003814697266 0 Z" stroke="none" fill="#3c446c"/>
+      </g>
+      <line id="Line_12" data-name="Line 12" y1="15.899" x2="17" transform="translate(25.5 9.5)" fill="none" stroke="#3c446c" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <text id="目标-2" data-name="目标" transform="translate(1016.28 2912.35)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-16.16" y="0">目标</tspan></text>
+    <text id="Dex" transform="translate(1146.768 2912.35)" fill="#262a41" font-size="16" font-family="Helvetica" letter-spacing="0.02em"><tspan x="-14.547" y="0">Dex</tspan></text>
+    <text id="金库" transform="translate(1273.982 2912.35)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-16.16" y="0">金库</tspan></text>
+    <g id="Group_128" data-name="Group 128" transform="translate(265.268 -414.65)">
+      <circle id="Ellipse_32" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1089.232 3286.15)" fill="#bcc3c9"/>
+      <circle id="Ellipse_32-2" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1099.232 3286.15)" fill="#bcc3c9"/>
+      <circle id="Ellipse_32-3" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1109.232 3286.15)" fill="#bcc3c9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 448.5, 2676)" filter="url(#Rectangle_94)">
+      <rect id="Rectangle_94-2" data-name="Rectangle 94" width="478" height="120" rx="15" transform="translate(22.5 286)" fill="#fff"/>
+    </g>
+    <text id="跨链桥" transform="translate(501 3028)" fill="#2b2f4a" font-size="16" font-family="PingFangHK-Semibold, PingFang HK" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">跨链桥</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 448.5, 2676)" filter="url(#Rectangle_96)">
+      <rect id="Rectangle_96-2" data-name="Rectangle 96" width="978" height="147" rx="15" transform="translate(22.5 426)" fill="#fff"/>
+    </g>
+    <text id="SPANNER_区块链网络" data-name="SPANNER 区块链网络" transform="translate(501 3181)" fill="#2b2f4a" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">SPANNER </tspan><tspan y="0" font-family="PingFangHK-Semibold, PingFang HK" font-weight="600">区块链网络</tspan></text>
+    <g id="vault_icon" transform="translate(1249.488 2826.65)">
+      <g id="Group_114" data-name="Group 114">
+        <g id="Group_113" data-name="Group 113">
+          <path id="Path_103" data-name="Path 103" d="M25.725,0A25.725,25.725,0,1,0,51.45,25.725,25.726,25.726,0,0,0,25.725,0ZM42.4,42.4A23.572,23.572,0,0,1,2.145,25.727c0,.591.622-6.274,1.851-9.18A23.588,23.588,0,1,1,42.4,42.4Z" fill="#262a41"/>
+        </g>
+      </g>
+      <g id="Group_116" data-name="Group 116" transform="translate(24.655 2.144)">
+        <g id="Group_115" data-name="Group 115">
+          <path id="Path_104" data-name="Path 104" d="M246.415,21.336a1.072,1.072,0,1,0,1.071,1.072A1.071,1.071,0,0,0,246.415,21.336Z" transform="translate(-245.344 -21.336)" fill="#ffa521"/>
+        </g>
+      </g>
+      <g id="Group_118" data-name="Group 118" transform="translate(24.655 47.164)">
+        <g id="Group_117" data-name="Group 117">
+          <path id="Path_105" data-name="Path 105" d="M246.415,469.344a1.071,1.071,0,1,0,1.071,1.071A1.07,1.07,0,0,0,246.415,469.344Z" transform="translate(-245.344 -469.344)" fill="#ffa521"/>
+        </g>
+      </g>
+      <g id="Group_120" data-name="Group 120" transform="translate(47.164 24.654)">
+        <g id="Group_119" data-name="Group 119">
+          <path id="Path_106" data-name="Path 106" d="M470.415,245.336a1.072,1.072,0,1,0,1.071,1.072A1.07,1.07,0,0,0,470.415,245.336Z" transform="translate(-469.344 -245.336)" fill="#ffa521"/>
+        </g>
+      </g>
+      <g id="Group_122" data-name="Group 122" transform="translate(4.287 4.287)">
+        <g id="Group_121" data-name="Group 121">
+          <path id="Path_107" data-name="Path 107" d="M84.124,74.429a1.069,1.069,0,0,0-1.426.334,21.461,21.461,0,0,0,0-21.323,1.063,1.063,0,1,0-.06-.1,21.516,21.516,0,0,0-7.782-7.782,1.068,1.068,0,1,0-.1-.059,21.459,21.459,0,0,0-21.324,0,1.081,1.081,0,1,0-.1.057,21.533,21.533,0,0,0-7.782,7.783,1.074,1.074,0,1,0-.058.1,21.455,21.455,0,0,0,0,21.326,1.074,1.074,0,1,0,.058.1,21.523,21.523,0,0,0,7.782,7.782,1.078,1.078,0,1,0,.1.058,21.46,21.46,0,0,0,21.326,0,1.069,1.069,0,1,0,.1-.06,21.511,21.511,0,0,0,7.782-7.782,1.071,1.071,0,1,0,1.485-.435ZM81.872,71.61A19.345,19.345,0,1,1,83.389,64.1,19.194,19.194,0,0,1,81.872,71.61Z" transform="translate(-42.656 -42.664)" fill="#262a41"/>
+        </g>
+      </g>
+      <g id="Group_124" data-name="Group 124" transform="translate(11.658 9.647)">
+        <g id="Group_123" data-name="Group 123">
+          <path id="Path_108" data-name="Path 108" d="M143.608,118.654l-5.626-3.25a8.585,8.585,0,0,0,0-6.652l5.626-3.248h0a1.072,1.072,0,0,0-1.071-1.857l-5.629,3.249a8.565,8.565,0,0,0-5.761-3.326v-6.5a1.071,1.071,0,1,0-2.142,0v6.5a8.565,8.565,0,0,0-5.761,3.326l-5.629-3.249a1.072,1.072,0,0,0-1.071,1.857l5.626,3.249a8.585,8.585,0,0,0,0,6.652l-5.626,3.25a1.071,1.071,0,1,0,1.071,1.856l5.627-3.25a8.575,8.575,0,0,0,5.762,3.327v6.5a1.071,1.071,0,1,0,2.142,0v-6.5a8.569,8.569,0,0,0,5.761-3.327l5.627,3.25h0a1.071,1.071,0,1,0,1.071-1.856Zm-13.531-.145a6.431,6.431,0,1,1,6.431-6.431A6.44,6.44,0,0,1,130.077,118.51Z" transform="translate(-116.009 -96)" fill="#ffa521"/>
+        </g>
+      </g>
+      <g id="Group_126" data-name="Group 126" transform="translate(24.655 24.654)">
+        <g id="Group_125" data-name="Group 125">
+          <path id="Path_109" data-name="Path 109" d="M246.415,245.336a1.072,1.072,0,1,0,1.071,1.072A1.071,1.071,0,0,0,246.415,245.336Z" transform="translate(-245.344 -245.336)" fill="#262a41"/>
+        </g>
+      </g>
+      <g id="Group_127" data-name="Group 127" transform="translate(2.145 24.654)">
+        <g id="Group_115-2" data-name="Group 115">
+          <path id="Path_104-2" data-name="Path 104" d="M246.415,21.336a1.072,1.072,0,1,0,1.071,1.072A1.071,1.071,0,0,0,246.415,21.336Z" transform="translate(-245.344 -21.336)" fill="#ffa521"/>
+        </g>
+      </g>
+    </g>
+    <g id="Dex_icon" transform="translate(1122 2826.65)">
+      <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-831 -3261)" clip-path="url(#clip-path)">
+        <g id="Group_131" data-name="Group 131" transform="translate(-438.025 -42.313)">
+          <g id="Group_129" data-name="Group 129" transform="translate(1279.951 3318.289) rotate(30)">
+            <g id="money" transform="translate(0.77 0)">
+              <path id="Path_113" data-name="Path 113" d="M40.584,0C41.665,24.519,12.811,32.578,0,16.2" transform="translate(0 0)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+            </g>
+            <rect id="Rectangle_100" data-name="Rectangle 100" width="7" height="2" rx="1" transform="matrix(0.07, 0.998, -0.998, 0.07, 1.376, 15.166)" fill="#262a41"/>
+            <rect id="Rectangle_101" data-name="Rectangle 101" width="7" height="2" rx="1" transform="translate(-0.103 15.007) rotate(8)" fill="#262a41"/>
+          </g>
+          <path id="Path_117" data-name="Path 117" d="M-8.135-15.8a.668.668,0,0,1-.471-.188.632.632,0,0,1-.2-.484v-1.856a9.314,9.314,0,0,1-3.4-1.022,5.734,5.734,0,0,1-2.125-1.9,4.732,4.732,0,0,1-.766-2.38.54.54,0,0,1,.175-.39.569.569,0,0,1,.417-.175h3.389a1.009,1.009,0,0,1,.524.121,1.852,1.852,0,0,1,.417.363,2.814,2.814,0,0,0,1.116,1.156,4.061,4.061,0,0,0,2.084.457,4.6,4.6,0,0,0,2.34-.484,1.478,1.478,0,0,0,.807-1.318,1.245,1.245,0,0,0-.417-.968,3.721,3.721,0,0,0-1.3-.672A26.834,26.834,0,0,0-8.188-26.2a10.912,10.912,0,0,1-4.841-1.963,4.587,4.587,0,0,1-1.587-3.738,4.937,4.937,0,0,1,1.56-3.671,7.228,7.228,0,0,1,4.249-1.869v-1.883a.632.632,0,0,1,.2-.484A.668.668,0,0,1-8.135-40H-5.9a.655.655,0,0,1,.484.188.655.655,0,0,1,.188.484v1.936a8.029,8.029,0,0,1,3.052,1.116,6.305,6.305,0,0,1,1.95,1.869A4.25,4.25,0,0,1,.5-32.335a.561.561,0,0,1-.161.39.526.526,0,0,1-.4.175h-3.55a1.112,1.112,0,0,1-.524-.108,1.029,1.029,0,0,1-.363-.35,1.772,1.772,0,0,0-.874-1.049,3.353,3.353,0,0,0-1.762-.43A3.342,3.342,0,0,0-9-33.277a1.422,1.422,0,0,0-.645,1.264,1.3,1.3,0,0,0,.363.941,3.234,3.234,0,0,0,1.183.686,16.946,16.946,0,0,0,2.353.632,16.942,16.942,0,0,1,3.98,1.143A5.024,5.024,0,0,1,.418-26.849a4.944,4.944,0,0,1,.7,2.743A4.911,4.911,0,0,1-.6-20.233,8.507,8.507,0,0,1-5.23-18.351v1.883a.655.655,0,0,1-.188.484A.655.655,0,0,1-5.9-15.8Z" transform="translate(1301.404 3355.979)" fill="#ffa521"/>
+          <g id="Group_132" data-name="Group 132" transform="translate(1308.409 3339.424) rotate(-150)">
+            <g id="money-2" data-name="money" transform="translate(1.389 0)">
+              <path id="Path_113-2" data-name="Path 113" d="M40.584,0C41.665,24.519,12.811,32.578,0,16.2" transform="translate(0)" fill="none" stroke="#262a41" stroke-linecap="round" stroke-width="2"/>
+            </g>
+            <rect id="Rectangle_100-2" data-name="Rectangle 100" width="7" height="2" rx="1" transform="matrix(0.07, 0.998, -0.998, 0.07, 1.995, 15.166)" fill="#262a41"/>
+            <rect id="Rectangle_101-2" data-name="Rectangle 101" width="7" height="2" rx="1" transform="translate(0.516 15.007) rotate(8)" fill="#262a41"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 448.5, 2676)" filter="url(#Rectangle_103)">
+      <rect id="Rectangle_103-2" data-name="Rectangle 103" width="478" height="120" rx="15" transform="translate(522.5 286)" fill="#fff"/>
+    </g>
+    <text id="链下数据" transform="translate(1003 3028)" fill="#2b2f4a" font-size="16" font-family="PingFangHK-Semibold, PingFang HK" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">链下数据</tspan></text>
+    <g id="Component_39_33" data-name="Component 39 – 33" transform="translate(727 2997)">
+      <rect id="Rectangle_93-6" data-name="Rectangle 93" width="202" height="52" rx="5" fill="#fff8ef"/>
+      <text id="去中心化托管管理" transform="translate(0 14)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="35.88" y="17">去中心化托管管理</tspan></text>
+    </g>
+    <g id="Component_39_34" data-name="Component 39 – 34" transform="translate(1210 2980)">
+      <rect id="Rectangle_93-7" data-name="Rectangle 93" width="216" height="35" rx="5" fill="#fff8ef"/>
+      <text id="防篡改数据" transform="translate(0 6)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="67.36" y="17">防篡改数据</tspan></text>
+    </g>
+    <g id="Component_39_35" data-name="Component 39 – 35" transform="translate(1210 3030)">
+      <rect id="Rectangle_93-8" data-name="Rectangle 93" width="216" height="35" rx="5" fill="#fff8ef"/>
+      <text id="透明计算" transform="translate(0 6)" fill="#ffa521" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="75.52" y="17">透明计算</tspan></text>
+    </g>
+    <g id="Node_icon" transform="translate(862 3137)">
+      <rect id="Rectangle_105" data-name="Rectangle 105" width="51" height="51" fill="none"/>
+      <g id="Group_135" data-name="Group 135" transform="translate(-6725 -3372)">
+        <g id="Rectangle_109" data-name="Rectangle 109" transform="translate(6725 3412)" fill="none" stroke="#262a41" stroke-width="2">
+          <rect width="51" height="7" stroke="none"/>
+          <rect x="1" y="1" width="49" height="5" fill="none"/>
+        </g>
+        <g id="Group_133" data-name="Group 133">
+          <g id="Rectangle_106" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Group_134" data-name="Group 134" transform="translate(0 18)">
+          <g id="Rectangle_106-2" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-2" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-2" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-2" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-2" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <line id="Line_14" data-name="Line 14" y2="4" transform="translate(6735.5 3386.5)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <line id="Line_15" data-name="Line 15" y2="4" transform="translate(6765.5 3386)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <g id="Rectangle_107" data-name="Rectangle 107" transform="translate(6742 3409)" fill="#fff" stroke="#262a41" stroke-width="2">
+          <rect width="17" height="13" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="15" height="11" rx="1" fill="none"/>
+        </g>
+        <rect id="Rectangle_108" data-name="Rectangle 108" width="7" height="3" rx="1" transform="translate(6747 3414)" fill="#ff8b00"/>
+        <line id="Line_16" data-name="Line 16" y2="4" transform="translate(6750.5 3405)" fill="none" stroke="#262a41" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Component_42_11" data-name="Component 42 – 11" transform="translate(991 3137)">
+      <rect id="Rectangle_105-2" data-name="Rectangle 105" width="51" height="51" fill="none"/>
+      <g id="Group_135-2" data-name="Group 135" transform="translate(-6725 -3372)">
+        <g id="Rectangle_109-2" data-name="Rectangle 109" transform="translate(6725 3412)" fill="none" stroke="#262a41" stroke-width="2">
+          <rect width="51" height="7" stroke="none"/>
+          <rect x="1" y="1" width="49" height="5" fill="none"/>
+        </g>
+        <g id="Group_133-2" data-name="Group 133">
+          <g id="Rectangle_106-3" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-3" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-3" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-3" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-3" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Group_134-2" data-name="Group 134" transform="translate(0 18)">
+          <g id="Rectangle_106-4" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-4" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-4" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-4" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-4" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <line id="Line_14-2" data-name="Line 14" y2="4" transform="translate(6735.5 3386.5)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <line id="Line_15-2" data-name="Line 15" y2="4" transform="translate(6765.5 3386)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <g id="Rectangle_107-2" data-name="Rectangle 107" transform="translate(6742 3409)" fill="#fff" stroke="#262a41" stroke-width="2">
+          <rect width="17" height="13" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="15" height="11" rx="1" fill="none"/>
+        </g>
+        <rect id="Rectangle_108-2" data-name="Rectangle 108" width="7" height="3" rx="1" transform="translate(6747 3414)" fill="#ff8b00"/>
+        <line id="Line_16-2" data-name="Line 16" y2="4" transform="translate(6750.5 3405)" fill="none" stroke="#262a41" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Component_42_12" data-name="Component 42 – 12" transform="translate(1120 3137)">
+      <rect id="Rectangle_105-3" data-name="Rectangle 105" width="51" height="51" fill="none"/>
+      <g id="Group_135-3" data-name="Group 135" transform="translate(-6725 -3372)">
+        <g id="Rectangle_109-3" data-name="Rectangle 109" transform="translate(6725 3412)" fill="none" stroke="#262a41" stroke-width="2">
+          <rect width="51" height="7" stroke="none"/>
+          <rect x="1" y="1" width="49" height="5" fill="none"/>
+        </g>
+        <g id="Group_133-3" data-name="Group 133">
+          <g id="Rectangle_106-5" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-5" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-5" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-5" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-5" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Group_134-3" data-name="Group 134" transform="translate(0 18)">
+          <g id="Rectangle_106-6" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-6" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-6" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-6" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-6" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <line id="Line_14-3" data-name="Line 14" y2="4" transform="translate(6735.5 3386.5)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <line id="Line_15-3" data-name="Line 15" y2="4" transform="translate(6765.5 3386)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <g id="Rectangle_107-3" data-name="Rectangle 107" transform="translate(6742 3409)" fill="#fff" stroke="#262a41" stroke-width="2">
+          <rect width="17" height="13" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="15" height="11" rx="1" fill="none"/>
+        </g>
+        <rect id="Rectangle_108-3" data-name="Rectangle 108" width="7" height="3" rx="1" transform="translate(6747 3414)" fill="#ff8b00"/>
+        <line id="Line_16-3" data-name="Line 16" y2="4" transform="translate(6750.5 3405)" fill="none" stroke="#262a41" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Component_42_13" data-name="Component 42 – 13" transform="translate(1316 3137)">
+      <rect id="Rectangle_105-4" data-name="Rectangle 105" width="51" height="51" fill="none"/>
+      <g id="Group_135-4" data-name="Group 135" transform="translate(-6725 -3372)">
+        <g id="Rectangle_109-4" data-name="Rectangle 109" transform="translate(6725 3412)" fill="none" stroke="#262a41" stroke-width="2">
+          <rect width="51" height="7" stroke="none"/>
+          <rect x="1" y="1" width="49" height="5" fill="none"/>
+        </g>
+        <g id="Group_133-4" data-name="Group 133">
+          <g id="Rectangle_106-7" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-7" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-7" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-7" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-7" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Group_134-4" data-name="Group 134" transform="translate(0 18)">
+          <g id="Rectangle_106-8" data-name="Rectangle 106" transform="translate(6725 3372)" fill="#fff" stroke="#262a41" stroke-width="2">
+            <rect width="51" height="15" rx="2" stroke="none"/>
+            <rect x="1" y="1" width="49" height="13" rx="1" fill="none"/>
+          </g>
+          <g id="Ellipse_33-8" data-name="Ellipse 33" transform="translate(6730 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_34-8" data-name="Ellipse 34" transform="translate(6742 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <g id="Ellipse_35-8" data-name="Ellipse 35" transform="translate(6736 3378)" fill="#fff" stroke="#ff8b00" stroke-width="1">
+            <circle cx="2" cy="2" r="2" stroke="none"/>
+            <circle cx="2" cy="2" r="1.5" fill="none"/>
+          </g>
+          <line id="Line_13-8" data-name="Line 13" x2="14" transform="translate(6755.5 3380)" fill="none" stroke="#ff8b00" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <line id="Line_14-4" data-name="Line 14" y2="4" transform="translate(6735.5 3386.5)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <line id="Line_15-4" data-name="Line 15" y2="4" transform="translate(6765.5 3386)" fill="none" stroke="#262a41" stroke-width="2"/>
+        <g id="Rectangle_107-4" data-name="Rectangle 107" transform="translate(6742 3409)" fill="#fff" stroke="#262a41" stroke-width="2">
+          <rect width="17" height="13" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="15" height="11" rx="1" fill="none"/>
+        </g>
+        <rect id="Rectangle_108-4" data-name="Rectangle 108" width="7" height="3" rx="1" transform="translate(6747 3414)" fill="#ff8b00"/>
+        <line id="Line_16-4" data-name="Line 16" y2="4" transform="translate(6750.5 3405)" fill="none" stroke="#262a41" stroke-width="2"/>
+      </g>
+    </g>
+    <text id="节点_1" data-name="节点 1" transform="translate(888.053 3217.901)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-23.152" y="0">节点</tspan><tspan y="0" xml:space="preserve" font-family="Helvetica"> 1</tspan></text>
+    <text id="节点_2" data-name="节点 2" transform="translate(1016.28 3217.7)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-23.152" y="0">节点</tspan><tspan y="0" xml:space="preserve" font-family="Helvetica"> 2</tspan></text>
+    <text id="节点_3" data-name="节点 3" transform="translate(1146.768 3217.85)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-23.152" y="0">节点</tspan><tspan y="0" xml:space="preserve" font-family="Helvetica"> 3</tspan></text>
+    <g id="Group_136" data-name="Group 136" transform="translate(141.75 -126.15)">
+      <circle id="Ellipse_32-4" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1089.232 3286.15)" fill="#bcc3c9"/>
+      <circle id="Ellipse_32-5" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1099.232 3286.15)" fill="#bcc3c9"/>
+      <circle id="Ellipse_32-6" data-name="Ellipse 32" cx="2.5" cy="2.5" r="2.5" transform="translate(1109.232 3286.15)" fill="#bcc3c9"/>
+    </g>
+    <text id="节点_N" data-name="节点 N" transform="translate(1342 3217)" fill="#262a41" font-size="16" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="-24.48" y="0">节点</tspan><tspan y="0" xml:space="preserve" font-family="Helvetica"> N</tspan></text>
+    <rect id="Rectangle_770" data-name="Rectangle 770" width="978" height="606" transform="translate(471 2676)" fill="none"/>
+  </g>
+</svg>
