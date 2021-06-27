@@ -177,6 +177,27 @@ export function MobileNav() {
         ))}
         <Divider />
         <CenterWrapper style={{ paddingTop: "1rem" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "0 1.5rem",
+              justifyContent: "center",
+              margin: "1rem 0"
+            }}
+          >
+            <SLink fontSize="16px" to={"/"}>
+              {t(`EN`)}
+            </SLink>
+            <Text fontSize="16px" padding="0 0.5rem" width="fit-content">
+              |
+            </Text>
+            <SLink fontSize="16px" to={"/zh"}>
+              {t(`CN`)}
+            </SLink>
+          </div>
+        </CenterWrapper>
+        <CenterWrapper>
           <ExternalLink>
             <Pill background={theme.primary1}>
               <HeavyText fontSize="16" color={theme.white}>
