@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="665" height="375.5" viewBox="0 0 665 375.5">
+  <defs>
+    <filter id="Rectangle_48" x="0" y="1.5" width="665" height="374" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#2b2f4a" flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.774" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3f4564"/>
+      <stop offset="1" stop-color="#262a41"/>
+    </linearGradient>
+  </defs>
+  <g id="Component_157_3" data-name="Component 157 – 3" transform="translate(22.5)">
+    <g transform="matrix(1, 0, 0, 1, -22.5, 0)" filter="url(#Rectangle_48)">
+      <rect id="Rectangle_48-2" data-name="Rectangle 48" width="620" height="329" rx="20" transform="translate(22.5 16)" fill="#fff"/>
+    </g>
+    <g id="Group_386" data-name="Group 386" transform="translate(-360 -1884)">
+      <path id="Path_101" data-name="Path 101" d="M20,0H176a20,20,0,0,1,20,20V309a20,20,0,0,1-20,20H20A20,20,0,0,1,0,309V20A20,20,0,0,1,20,0Z" transform="translate(572 1884)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="DAO" transform="translate(48 77.118)" fill="#262a41" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="-18.097" y="0">DAO</tspan></text>
+    <g id="Group_87" data-name="Group 87" transform="translate(-375.667 -1672.467)">
+      <rect id="Rectangle_49" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#262a41"/>
+      <rect id="Rectangle_50" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#262a41"/>
+    </g>
+    <text id="去中心化和透明" transform="translate(55 115.658)" fill="#262a41" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">去中心化和透明</tspan></text>
+    <g id="Group_87-2" data-name="Group 87" transform="translate(-375.667 -1622.013)">
+      <rect id="Rectangle_49-2" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#262a41"/>
+      <rect id="Rectangle_50-2" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#262a41"/>
+    </g>
+    <text id="保证执行" transform="translate(55 166.112)" fill="#262a41" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">保证执行</tspan></text>
+    <g id="Component_156_1" data-name="Component 156 – 1" transform="translate(31.675 215.379)">
+      <rect id="Rectangle_50-3" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(0 9.702) rotate(-45)" fill="#bcc3c9"/>
+      <rect id="Rectangle_781" data-name="Rectangle 781" width="13.721" height="2.079" rx="1.039" transform="translate(9.702 11.172) rotate(-135)" fill="#bcc3c9"/>
+    </g>
+    <text id="以结果为导向" transform="translate(55 212.379)" fill="#bcc3c9" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">以结果为导向</tspan></text>
+    <text id="多功能结构" transform="translate(55 257.833)" fill="#bcc3c9" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">多功能结构</tspan></text>
+    <g id="Component_156_2" data-name="Component 156 – 2" transform="translate(31.675 261.632)">
+      <rect id="Rectangle_50-4" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(0 9.702) rotate(-45)" fill="#bcc3c9"/>
+      <rect id="Rectangle_781-2" data-name="Rectangle 781" width="13.721" height="2.079" rx="1.039" transform="translate(9.702 11.172) rotate(-135)" fill="#bcc3c9"/>
+    </g>
+    <text id="DPO" transform="translate(251.5 63.981)" fill="#fff" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="-17.656" y="0">DPO</tspan></text>
+    <g id="Group_87-3" data-name="Group 87" transform="translate(-172.167 -1678.467)">
+      <rect id="Rectangle_49-3" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#fff"/>
+      <rect id="Rectangle_50-5" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#fff"/>
+    </g>
+    <text id="去中心化和透明-2" data-name="去中心化和透明" transform="translate(258.5 109.658)" fill="#fff" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">去中心化和透明</tspan></text>
+    <g id="Group_87-4" data-name="Group 87" transform="translate(-172.167 -1633.013)">
+      <rect id="Rectangle_49-4" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#fff"/>
+      <rect id="Rectangle_50-6" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#fff"/>
+    </g>
+    <text id="保证执行-2" data-name="保证执行" transform="translate(258.5 155.112)" fill="#fff" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">保证执行</tspan></text>
+    <g id="Group_87-5" data-name="Group 87" transform="translate(-172.167 -1586.56)">
+      <rect id="Rectangle_49-5" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#fff"/>
+      <rect id="Rectangle_50-7" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#fff"/>
+    </g>
+    <text id="以结果为导向-2" data-name="以结果为导向" transform="translate(258.5 201.565)" fill="#fff" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">以结果为导向</tspan></text>
+    <g id="Group_87-6" data-name="Group 87" transform="translate(-172.167 -1540.542)">
+      <rect id="Rectangle_49-6" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#fff"/>
+      <rect id="Rectangle_50-8" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#fff"/>
+    </g>
+    <text id="多功能结构-2" data-name="多功能结构" transform="translate(258.5 248.583)" fill="#fff" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">多功能结构</tspan></text>
+    <text id="Traditional_Organization" data-name="Traditional
+Organization" transform="translate(438 67.618)" fill="#262a41" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">Traditional</tspan><tspan x="0" y="19">Organization</tspan></text>
+    <text id="去中心化和透明-3" data-name="去中心化和透明" transform="translate(463 115.658)" fill="#bcc3c9" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">去中心化和透明</tspan></text>
+    <text id="保证执行-3" data-name="保证执行" transform="translate(463 166.112)" fill="#bcc3c9" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">保证执行</tspan></text>
+    <g id="Group_87-7" data-name="Group 87" transform="translate(32.333 -1575.746)">
+      <rect id="Rectangle_49-7" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#262a41"/>
+      <rect id="Rectangle_50-9" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#262a41"/>
+    </g>
+    <text id="以结果为导向-3" data-name="以结果为导向" transform="translate(463 212.379)" fill="#262a41" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">以结果为导向</tspan></text>
+    <g id="Group_87-8" data-name="Group 87" transform="translate(32.333 -1530.292)">
+      <rect id="Rectangle_49-8" data-name="Rectangle 49" width="6.652" height="2.079" rx="1.039" transform="translate(407.211 1796.29) rotate(48)" fill="#262a41"/>
+      <rect id="Rectangle_50-10" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(409.016 1800.954) rotate(-45)" fill="#262a41"/>
+    </g>
+    <text id="多功能结构-3" data-name="多功能结构" transform="translate(463 257.833)" fill="#262a41" font-size="12" font-family="PingFangHK-Regular, PingFang HK" letter-spacing="0.02em"><tspan x="0" y="13">多功能结构</tspan></text>
+    <g id="Component_156_3" data-name="Component 156 – 3" transform="translate(438 118.658)">
+      <rect id="Rectangle_50-11" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(0 9.702) rotate(-45)" fill="#bcc3c9"/>
+      <rect id="Rectangle_781-3" data-name="Rectangle 781" width="13.721" height="2.079" rx="1.039" transform="translate(9.702 11.172) rotate(-135)" fill="#bcc3c9"/>
+    </g>
+    <g id="Component_156_4" data-name="Component 156 – 4" transform="translate(438 169.112)">
+      <rect id="Rectangle_50-12" data-name="Rectangle 50" width="13.72" height="2.079" rx="1.039" transform="translate(0 9.702) rotate(-45)" fill="#bcc3c9"/>
+      <rect id="Rectangle_781-4" data-name="Rectangle 781" width="13.721" height="2.079" rx="1.039" transform="translate(9.702 11.172) rotate(-135)" fill="#bcc3c9"/>
+    </g>
+  </g>
+</svg>
