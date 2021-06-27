@@ -3,7 +3,7 @@ module.exports = {
     title: `Spanner Protocol`,
     description: `The blockchain for borderless collaboration. Create DPOs to collaborate transparently and fairly, powered by BOLT.`,
     author: `spannerprotocol`,
-    siteUrl:`http://localhost:8000`
+    siteUrl:`https://www.spanner.network`
   },
   pathPrefix: "/spanner-website",
   plugins: [
