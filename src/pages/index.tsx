@@ -408,13 +408,10 @@ function AudienceLearnMore() {
         <ContentWrapper>
           <ContentSection>
             <Grid columns="2" mobileColumns="1">
-              <GridBlock maxWidth="670px" textAlign="left">
+              <GridBlock display="flex" maxWidth="670px" textAlign="left" alignItems="center">
                 <Header2 color={theme.white}>
                   {t("Whether you are a Project Owner, User or just curious, there’s plenty of resources for you to learn more about Spanner.")}
                 </Header2>
-                {/*<Text color={theme.bg2}>*/}
-                {/*  {t('Decentralization provides trust and transparency for open participation. Operational Focus provides effectiveness and efficiency for the goals of organizations.')}*/}
-                {/*</Text>*/}
               </GridBlock>
               <GridBlock maxWidth="670px" textAlign="left">
                 {cardData.map((data, index) => (
