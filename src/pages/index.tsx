@@ -487,9 +487,9 @@ function OurCommunity() {
   const cardData = [
     {
       header: `Hodlers`,
-      text: `Get up to date information at our Telegram Announcement Channel.`,
+      text: `Get up to date information at our Telegram Channel.`,
       cta: "Join Telegram",
-      link: "https://t.me/spannerupdates"
+      link: "https://t.me/spannerprotocol"
     },
     {
       header: "Ecosystem Partners",

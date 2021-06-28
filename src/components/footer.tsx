@@ -53,11 +53,6 @@ const community = [
     internal: false
   },
   {
-    label: `Telegram Announcements`,
-    link: `https://t.me/spannerupdates`,
-    internal: false
-  },
-  {
     label: `Twitter`,
     link: `https://twitter.com/ProtocolSpanner`,
     internal: false
