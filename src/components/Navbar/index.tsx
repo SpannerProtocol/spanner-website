@@ -20,40 +20,17 @@ import { Pill } from "../Pill"
 import { Text, HeavyText } from "../Text"
 import { CenterWrapper } from "../Wrapper"
 import SpannerDeck from "../../assets/spanner-deck-v1.31.pdf"
+import SpannerDeckZh from "../../assets/spanner-deck-v1.31-zh.pdf"
 import { useTranslation } from "react-i18next"
 
-const navItems = [
-  {
-    label: "Deck",
-    link: SpannerDeck,
-    icon: <SlideShow />,
-    internal: false,
-  },
-  {
-    label: "Docs",
-    link: "/docs/getting-started",
-    icon: <Description />,
-    internal: true,
-  },
-  {
-    label: "Guides",
-    link: "/guides",
-    icon: <Directions />,
-    internal: true,
-  },
-  {
-    label: "Blog",
-    link: "https://blog.spanner.network",
-    icon: <Book />,
-    internal: false,
-  },
-]
 
 const HamburgerWrapper = styled.div`
   cursor: pointer;
+
   :hover {
     opacity: 0.8;
   }
+
   :active {
     opacity: 0.9;
   }
@@ -75,11 +52,11 @@ const HamburgerWrapper = styled.div`
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 250
   },
   fullList: {
-    width: "auto",
-  },
+    width: "auto"
+  }
 })
 
 interface NavItemProps {
@@ -94,19 +71,19 @@ interface NavItemProps {
 }
 
 function NavItem({
-  icon,
-  text,
-  link,
-  classes,
-  internal,
-  toggleDrawer,
-}: NavItemProps) {
+                   icon,
+                   text,
+                   link,
+                   classes,
+                   internal,
+                   toggleDrawer
+                 }: NavItemProps) {
   const { t, i18n } = useTranslation()
   return (
     <>
       <div
         className={clsx(classes.list, {
-          [classes.fullList]: false,
+          [classes.fullList]: false
         })}
         role="presentation"
         onClick={toggleDrawer(false)}
@@ -136,7 +113,7 @@ function NavItem({
   )
 }
 
-export function MobileNav() {
+export function MobileNav({navItems}:{navItems: NavItem[]}) {
   const classes = useStyles()
   const [isOpen, setIsOpen] = React.useState<boolean>(false)
   const theme = useContext(ThemeContext)
@@ -212,7 +189,7 @@ export function MobileNav() {
   )
 }
 
-export function DesktopNav() {
+export function DesktopNav({navItems}:{navItems: NavItem[]}) {
   const [activeLabel, setActiveLabel] = useState<string>("")
   const theme = useContext(ThemeContext)
   const { t, i18n } = useTranslation()
@@ -268,8 +245,42 @@ export function DesktopNav() {
   )
 }
 
+
+interface NavItem {
+  label: string
+  link: string
+  icon: JSX.Element
+  internal: boolean
+}
+
 export default function NavBar() {
   const isMobile = useMedia("(max-width: 720px)")
-
-  return <>{isMobile ? <MobileNav /> : <DesktopNav />}</>
+  const { i18n } = useTranslation()
+  const navItems: NavItem[] = [
+    {
+      label: "Deck",
+      link: i18n.language == "zh" ? SpannerDeckZh : SpannerDeck,
+      icon: <SlideShow />,
+      internal: false
+    },
+    {
+      label: "Docs",
+      link: "/docs/getting-started",
+      icon: <Description />,
+      internal: true
+    },
+    {
+      label: "Guides",
+      link: "/guides",
+      icon: <Directions />,
+      internal: true
+    },
+    {
+      label: "Blog",
+      link: "https://blog.spanner.network",
+      icon: <Book />,
+      internal: false
+    }
+  ]
+  return <>{isMobile ? <MobileNav  navItems={navItems}/> : <DesktopNav navItems={navItems} />}</>
 }

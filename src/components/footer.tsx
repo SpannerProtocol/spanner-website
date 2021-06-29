@@ -1,8 +1,8 @@
-import useSiteUrl from "hooks/useSiteUrl"
 import * as React from "react"
 import { useContext } from "react"
 import styled, { ThemeContext } from "styled-components"
 import SpannerDeck from "../assets/spanner-deck-v1.31.pdf"
+import SpannerDeckZh from "../assets/spanner-deck-v1.31-zh.pdf"
 import logo from "../images/logo-spanner-gradient.svg"
 import { ExternalLink, SLink, SLocalizedLink } from "./Link"
 import { HeavyText, Text } from "./Text"
@@ -63,28 +63,6 @@ const community = [
   // },
 ]
 
-const more = [
-  {
-    label: `Blog`,
-    link: `https://blog.spanner.network`,
-    internal: false
-  },
-  {
-    label: `Pitch Deck`,
-    link: SpannerDeck,
-    internal: false
-  },
-  {
-    label: `GitHub`,
-    link: `https://github.com/SpannerProtocol`,
-    internal: false
-  },
-  {
-    label: `Contact Us`,
-    link: `mailto:ask@spanner.network`,
-    internal: false
-  }
-]
 
 const language = [
   {
@@ -118,6 +96,28 @@ const ColumnWrapper = styled.div`
 export default function Footer() {
   const theme = useContext(ThemeContext)
   const { t, i18n } = useTranslation()
+  const more = [
+    {
+      label: `Blog`,
+      link: `https://blog.spanner.network`,
+      internal: false
+    },
+    {
+      label: `Pitch Deck`,
+      link: i18n.language == "zh" ? SpannerDeckZh : SpannerDeck,
+      internal: false
+    },
+    {
+      label: `GitHub`,
+      link: `https://github.com/SpannerProtocol`,
+      internal: false
+    },
+    {
+      label: `Contact Us`,
+      link: `mailto:ask@spanner.network`,
+      internal: false
+    }
+  ]
   const getColumn = (
     columns: { label: string; link: string; internal: boolean }[]
   ) => (
